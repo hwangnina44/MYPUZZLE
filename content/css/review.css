@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    margin-top: 120px;
+    font-family: 'S-Core Dream 4';
+}
+
+article.content-header {
+    width: 100%;
+    height: 240px;
+    text-align: center;
+    position: relative;
+    background-image: url(../img/bg_banner2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FAFAFA;
+}
+
+.content-header .lnb {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.content-header .lnb h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+
+.content-header nav {}
+
+.content-header .lnb nav p {
+    display: inline-block;
+    padding: 4px 16px;
+    font-size: 16px;
+    border: 1px solid #878783;
+    border-radius: 30px;
+    color: #878784;
+}
+
+.lnb nav p~p {
+    margin-left: 24px;
+}
+
+.lnb nav p.on {
+    background-color: #5B1A7C;
+    border: 1px solid #5B1A7C;
+    color: #fff;
+}
+
+section {}
+
+section .section-top {
+    font-size: 16px;
+    color: #878484;
+    font-weight: 500;
+    padding: 40px 0;
+    text-align: right;
+}
+
+section .section-top .filter {
+    float: right;
+}
+
+section .section-top .filter p span:last-child {
+    margin-left: 16px;
+}
+
+.section-top .count {
+    float: left;
+}
+
+.section-top .count span {
+    font-size: 20px;
+    font-family: 'S-Core Dream 5';
+    font-weight: 500;
+    color: #5B1A7C;
+}
+article.review {
+    margin-bottom: 80px;
+}
+
+.review ul li.review-box {
+    float: left;
+    width: 32%;
+    padding: 32px;
+    box-shadow: 0 0 8px #eee;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    background-color: #FBFAFF;
+}
+
+ul li.review-box:nth-child(3n) {
+    margin-right: 0;
+}
+
+ul .review-box .box-top {
+    font-size: 14px;
+    color: #878484;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.review-box .box-top p {
+    display: inline-block;
+}
+
+.review-box .box-top p.count {
+    padding: 4px 8px;
+    border: 1px solid #A050CC;
+    background-color: #A050CC;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.review-box .box-top p.user {
+    font-size: 16px;
+    color: #000;
+}
+
+.review-box .box-top p.date {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.review-box .box-top p span.count {
+    padding: 2px 6px;
+    background-color: #5B1A7C;
+    color: #fff;
+    margin-right: 16px;
+}
+
+ul .review-box .text {}
+
+.review-box .text h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.review-box .text p {
+    margin-bottom: 8px;
+}
+
+.review-box .text .btn {
+    margin-bottom: 16px;
+}
+
+.text .btn a {
+    font-size: 14px;
+    color: #878484;
+}
+
+.review-box .star {}
+
+.review-box .star {
+    height: 18px;
+    margin-bottom: 8px;
+}
+
+.review-box .star img {
+    display: inline-block;
+    height: 100%
+}
+
+.review-box .star p {
+    display: inline-block;
+    color: #878484;
+    font-size: 14px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.review-box .img-box {
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+}
+
+.img-box .img-inner {
+    width: 150%;
+    height: 140px;
+    outline: 3px solid blue;
+}
+.img-box .img-inner a {
+    float: left;
+    width: 25%;
+    height: 125px;
+    margin-right: 2%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img-box .img-inner img {
+    width: 100%;
+    display: block;
+}
+
+.btn-more {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 80px;
+}

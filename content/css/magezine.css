@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    margin-top: 120px;
+    font-family: 'S-Core Dream 4';
+}
+
+article.content-header {
+    width: 100%;
+    height: 240px;
+    background-image: url(../img/bg_banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;    
+}
+
+.content-header .lnb {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.content-header .lnb h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+
+
+.content-header .lnb nav p {
+    display: inline-block;
+    padding: 4px 16px;
+    font-size: 16px;
+    border: 1px solid #878783;
+    border-radius: 30px;
+    color: #878784;
+}
+.lnb nav p.on {
+    background-color: #5B1A7C;
+    border: 1px solid #5B1A7C;;
+    color: #fff;
+}
+.lnb nav p~p{
+    margin-left: 24px;
+}
+
+section {
+}
+
+section .section-top {
+    font-size: 16px;
+    color: #878484;
+    font-weight: 500;
+    padding: 40px 0;
+}
+
+section .section-top .filter {
+    float: right;
+}
+section .section-top .filter p span:last-child {
+    margin-left: 16px;
+}
+.section-top .count {
+    float: left;
+}
+.section-top .count span{
+    font-size: 20px;
+    font-family: 'S-Core Dream 5';
+    font-weight: 500;
+    color: #5B1A7C;
+}
+article.list {
+    margin-bottom: 80px;
+}
+
+.list ul li {
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    padding: 16px;
+    background-color: #FBFAFF;
+    box-shadow: 0 0 8px #eee;
+    box-sizing: border-box;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+ul li a p.issue {
+    position: absolute;
+    left: 16px;
+    top:16px;
+    padding: 4px 12px;
+    border: 1px solid #A050CC;
+    background-color: #A050CC;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 12px;
+    z-index: 99;
+}
+
+.list ul li:nth-child(4n){
+    margin-right:0;
+}
+
+ul li a .img-box {
+    border-radius: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+ul li a .img-box img {
+    width: 100%;
+    display: block;
+    transition: all 0.6s;
+}
+
+ul li a .img-box:hover img {
+    transform: scale(1.2)
+}
+
+
+ul li a .title {
+    text-align: center;
+    padding-top: 16px;
+}
+
+li a .title p {
+    display: inline-block;
+    font-size: 14px;
+    color: #878484;
+}
+
+li a .title p span {
+    color: #A050CC;
+}
+
+li a .title h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.btn-more {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 80px;
+}

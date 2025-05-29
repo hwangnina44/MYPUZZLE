@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+footer {
+    width: 100%;
+    background-color: #2F133E;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+footer .footer-top {
+    padding: 40px 0 0;
+}
+
+.footer-top ul {
+    padding: 16px 0;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.3)
+}
+
+.footer-top ul li {
+    font-size: 12px;
+}
+.footer-top ul li a {
+    color: rgba(255, 255, 255, 0.8);
+}
+.footer-top ul li~li {
+    margin-left: 20px;
+}
+
+
+.footer-top .copyright {
+    float: left;
+    width: 70%;
+    height: 200px;
+}
+
+
+.footer-top .copyright .info {
+    margin: 20px 0;
+    font-size: 12px;
+}
+
+.copyright .info p:first-child {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.ccm a {
+    display: inline-block;
+    width: 30px;
+    margin-right: 2%;
+    vertical-align: middle;
+}
+
+.ccm a img {
+    width: 100%;
+    display: block;
+}
+
+.ccm .des {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ccm .des p {
+    font-size: 12px;
+}
+
+
+footer .footer-top .call {
+    text-align: right;
+    float: right;
+    width: 30%;
+    margin: 30px 0;
+    font-size: 12px;
+}
+
+.call .callcenter {
+    margin-bottom: 10px;
+}
+
+.call .callcenter p {
+    display: inline-block;
+    font-weight: 500;
+}
+
+.call .callcenter p a {
+    color: rgba(255, 255, 255, 0.8);
+}
+.call .callcenter p:last-child {
+    font-size: 18px;
+}
+
+.call .time {
+    margin-bottom: 20px;
+}
+.call .time p {
+    font-size: 12px;
+}
+
+.call .sns-btn a {
+    display: inline-block;
+    vertical-align: middle;
+}
+.call .sns-btn a~a {
+    margin-left: 2%;
+}
+.call .sns-btn a img {
+    width: 30px;
+    display: block;
+}
