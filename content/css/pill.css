@@ -30,7 +30,9 @@ article.content-header {
     margin-bottom: 80px;
 }
 
-
+.content-header .lnb nav {
+    transform: translateY(-100%);
+}
 .content-header .lnb nav p {
     display: inline-block;
     padding: 4px 16px;
@@ -43,6 +45,11 @@ article.content-header {
     background-color: #5B1A7C;
     border: 1px solid #5B1A7C;;
     color: #fff;
+}
+.lnb nav p:hover {
+    color:#5B1A7C;
+    background-color: #FBFAFF;
+    border: 1px solid #5B1A7C;
 }
 .lnb nav p~p{
     margin-left: 24px;
@@ -81,9 +88,9 @@ article.list {
     width: 23.5%;
     margin-right: 2%;
     margin-bottom: 3%;
-    padding: 8px 16px;
-    background-color: #FBFAFF;
+    padding: 16px;
     box-shadow: 0 0 8px #eee;
+    background-color: #FBFAFF;
     box-sizing: border-box;
     border-radius: 30px;
     overflow: hidden;
@@ -94,7 +101,6 @@ article.list {
 }
 
 ul li a .imgbox {
-    background-color: #FBFAFF;
     width: 100%;
     padding: 16px;
     box-sizing: border-box;
@@ -109,17 +115,16 @@ ul li a .imgbox img {
 ul li a .info {
     padding: 16px;
 }
-
 li a .info .tag {
+    margin-bottom: 4px;
+}
+li a .info .tag p {
+    display: inline-block;
     font-size: 14px;
     color: #878484;
-    margin-bottom: 4px;
 }
 
 li a .info .tag span {
-    margin-right: 8px;
-}
-li a .info .tag span::first-line {
     color: #5B1A7C;
 }
 

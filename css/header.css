@@ -18,11 +18,9 @@ header .top {
 }
 
 header .top .logo {
-    display: inline-block;
 }
 .top .logo a{
     height: 32px;
-    outline: 1px solid red;
 }
 .top .logo a img{
     display: block;
@@ -30,21 +28,18 @@ header .top .logo {
 }
 
 .top nav.gnb {
-    display: inline-block;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -22%);
 }
 
 .top .gnb ul li {
-    padding: 0 12px;
+    padding: 0 16px;
 }
 
 .top .gnb ul li a {
-    font-family: 'S-Core Dream 5';
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 32px;
+    font-size: 18px;
 }
 
 .top .login {
@@ -56,9 +51,9 @@ header .top .logo {
 
 .top .login .icon-btn {
     display: inline-block;
-    height: 28px;
+    height: 24px;
     vertical-align: middle;
-    margin-right: 12px;
+    margin-right: 8px;
 }
 .top .login .icon-btn img {
     height: 100%;
@@ -68,10 +63,12 @@ header .top .logo {
 
 header .top .login .btn {
     display: inline-block;
-    padding: 4px 32px;
-    color: #fff;
-    background-color: #3C1152;
-    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 100px;
+    color: #3C1152;
+    background: url(../img/icon/btn_more_on.png) no-repeat 148px 23px /8px;
+    background-color: #FBFAFF;
     border-radius: 100px;
     vertical-align: middle;
+    letter-spacing: -0.5px;
 }

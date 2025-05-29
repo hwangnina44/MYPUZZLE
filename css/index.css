@@ -5,6 +5,7 @@
 body{
     font-family: 'S-Core Dream 4';
     font-weight: 400;
+    color : #333;
 }
 section {
     width: 100%;
@@ -70,28 +71,29 @@ article.custom {
 }
 
 .custom .title h2 {
-    font-family: 'S-Core Dream 5';
+    font-family: 'S-Core Dream 7';
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 32px;
 }
 
 .custom .title p {
-    font-size: 16px;
+    color:#595959;
     margin-bottom: 40px;
-    line-height: 30px;
+    line-height: 28px;
 }
 
 .custom .title .btn {
     display: inline-block;
-    padding: 14px 40px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #5B1A7C;
-    background-color: #FBFAFF;
-    border:1px solid #5B1A7C;
+    padding: 16px 32px;
     border-radius: 100px;
-    text-align: center;
+    background: url(../img/icon/btn_more.png) no-repeat 148px 23px /8px;
+    background-color: #F7F7F7;
+} 
+.custom .title .btn:hover {
+    color: #3C1152;
+    background: url(../img/icon/btn_more_on.png) no-repeat 148px 23px /8px;
+    background-color: #FBFAFF;
 }
 
 .custom ul {
@@ -117,8 +119,9 @@ ul li .imgbox {
     border-radius: 30px;
 }
 li .number {
+    font-family: 'S-Core Dream 8 ';
     font-size: 60px;
-    font-weight: 600;
+    font-weight: 800;
     color:#3C1152;
     position: absolute;
     left: 25px;
@@ -138,19 +141,18 @@ ul li .imgbox img {
     box-sizing: border-box;
     border-radius: 30px;
     background-color: #fff;
-
 }
 
 .desbox .des h3 {
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 8px;
+    font-family: 'S-Core Dream 7 ';
+    font-weight: 700;
+    margin-bottom: 4px;
 }
 
 .desbox .des p {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -1px;
+    line-height: 28px;
+    letter-spacing: -0.7px;
+    color: #595959;
 }
 
 .custom .icon-wrap1 .icon-box {
@@ -177,17 +179,17 @@ ul li .imgbox img {
 .icon-wrap1 .icon-box .des {
     float: left;
     width: 60%;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .icon-box .des h4 {
-    font-size: 18px;
+    font-family: 'S-Core Dream 5 ';
     font-weight: 500;
-    margin-bottom: 16px;
+    margin-bottom: 4px;
 }
 
 .icon-box .des p {
-    font-size: 16px;
+   
 }
 
 .custom .icon-wrap2 .icon-box {
@@ -222,14 +224,13 @@ article.review {
 }
 
 article.review h2 {
-    font-family: 'S-Core Dream 5';
+    font-family: 'S-Core Dream 7';
     text-align: center;
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 80px;
 }
 /* review */
-article.review h2 span {}
 
 .review .slider {
     width: 100%;
@@ -246,8 +247,8 @@ article.review h2 span {}
     float: left;
     width: 7.5%;
     margin-left: 2%;
-    height: 269px;
-    padding: 24px 16px ;
+    height: 260px;
+    padding: 24px ;
     background-color: #fff;
     box-shadow: 0 0 8px #5B1A7C;
     border-radius: 30px;
@@ -256,12 +257,11 @@ article.review h2 span {}
 
 .review .box a .rev-top {
     position: relative;
-    line-height: 19px;
     margin-bottom: 16px;
 }
 
 .review .box a .rev-top p:first-child {
-    font-size: 10px;
+    font-size: 14px;
     background-color: #A050CC;
     padding: 2px 6px;
     border-radius: 30px;
@@ -270,12 +270,11 @@ article.review h2 span {}
 }
 
 .review .box a .rev-top p:last-child {
-    font-size: 10px;
+    font-size: 14px;
     color: #878484;
     position: absolute;
     right: 0;
     bottom: 0;
-
 }
 
 .review .box a .rev-bottom {
@@ -283,15 +282,16 @@ article.review h2 span {}
 }
 
 .review .box a .rev-bottom p:first-child {
-    font-size: 18px;
+    font-family: 'S-Core Dream 5 ';
     font-weight: 500;
     margin-bottom: 8px;
 }
 
 .review .box a .rev-bottom p:last-child {
-    font-size: 16px;
-    line-height: 24px;
-    height: 96px;
+    color:#595959;
+    line-height: 28px;
+    height: 100px;
+    overflow: hidden;
 }
 
 .review .box a.btn {
@@ -313,21 +313,22 @@ article.pill .title {
 }
 
 article.pill .title h2 {
-    font-family: 'S-Core Dream 5';
+    font-family: 'S-Core Dream 7';
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 32px;
 }
 
 .pill .title p {
-    font-size: 16px;
-    line-height: 30px;
+    color: #595959;
+    line-height: 28px;
     margin-bottom: 32px;
 }
 
 .pill .title .btn {
     font-size: 14px;
     color: #878484;
+    cursor: pointer;
 }
 
 .pill ul {
@@ -373,15 +374,18 @@ article.pill .title h2 {
 }
 
 .product a .info .tag {
-    font-size: 12px;
+    font-size: 14px;
     color: #878484;
     margin-bottom: 4px;
 }
-
 .product a .info .txt {
-    font-size: 18px;
+    font-family: 'S-Core Dream 5 ';
     font-weight: 500;
 }
+.product a .info .tag span{
+    margin-right: 4px;
+}
+
 
 article.magazine {
     width: 100%;
@@ -394,12 +398,13 @@ article.magazine {
 }
 
 .magazine .magazine-top h2 {
-    font-family: 'S-Core Dream 5';
+    font-family: 'S-Core Dream 7';
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .magazine .magazine-top nav {
+    color: #595959;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -433,14 +438,15 @@ article.magazine {
     
 }
 .magazine-box a:hover img {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 ul .magazine-box .title-box {}
 
 .title-box h3 {
-    font-size: 20px;
-    margin-bottom: 8px;
+    font-family: 'S-Core Dream 5 ';
+    font-weight: 400;
+    margin-bottom: 4px;
 }
 
 .title-box p {}
@@ -465,7 +471,8 @@ article.qa {}
 }
 
 .qa .service h3 {
-    font-size: 20px;
+    font-family: 'S-Core Dream 5';
+    font-weight: 500;
     padding-bottom: 24px;
     border-bottom: 1px solid #eee;
     margin-bottom: 24px;
@@ -477,9 +484,8 @@ article.qa {}
     color: #292929;
 }
 .qa .service p a {
-    font-size: 12px;
+    font-size: 14px;
     color: #878484;
-    text-align: right;
 }
 
 .qa .notice {
@@ -489,7 +495,8 @@ article.qa {}
 }
 
 .qa .notice h3 {
-    font-size: 20px;
+    font-family: 'S-Core Dream 5 ';
+    font-weight: 500;
     padding-bottom: 24px;
     border-bottom: 1px solid #eee;
     margin-bottom: 24px;
@@ -498,11 +505,10 @@ article.qa {}
 .qa .notice p {
     font-size: 14px;
     margin-bottom: 16px;
-    color: #292929;
+    color: #595959;
 }
 
 .qa .notice p a {
-    font-size: 12px;
+    font-size: 14px;
     color: #878484;
-    text-align: right;
 }
