@@ -3,12 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>고객 후기</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="css/review.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <title>후기</title>
+    <script src="../script/jquery-1.7.2.min.js"></script>
+    <script src="../script/review.js"></script>
+
 </head>
 
 <body>
@@ -19,11 +22,11 @@
 
             <nav class="gnb">
                 <ul>
-                    <li><a href="brand.html">브랜드</a></li>
+                    <li><a href="brand.html">브랜드스토리</a></li>
                     <li><a href="custom.html">맞춤영양제</a></li>
                     <li><a href="pill.html">영양제</a></li>
-                    <li><a href="review.html">후기</a></li>
-                    <li><a href="magezine.html">매거진퍼즐</a></li>
+                    <li><a href="review.html" class="active">고객후기</a></li>
+                    <li><a href="magazine.html">매거진 퍼즐</a></li>
                     <li><a href="#">마이퍼즐</a></li>
                 </ul>
             </nav>
@@ -31,22 +34,22 @@
             <div class="login">
                 <a href="#" class="icon-btn"><img src="../img/icon/icon_login.png" alt="로그인 버튼"></a>
                 <a href="#" class="icon-btn"><img src="../img/icon/icon_cart.png" alt="장바구니 버튼"></a>
-                <a href="#" class="btn">맞춤영양제 추천받기</a>
+                <a href="#" class="btn">맞춤영양제 추천</a>
             </div>
         </div>
     </header>
     <!-- section -->
     <article class="content-header">
         <div class="lnb">
-            <h2>후기</h2>
+            <h2>고객 후기</h2>
             <nav>
-                <p class="on">전체<span></span></p>
-                <p>정기구독<span></span></p>
-                <p>영양제<span></span></p>
+                <p class="on all">전체</p>
+                <p class="subscription">정기구독</p>
+                <p class="pill">영양제</p>
             </nav>
         </div>
     </article>
-     <!-- section -->
+    <!-- section -->
     <section>
         <div class="section-top inner clear">
             <div class="count">
@@ -58,11 +61,11 @@
         </div>
         <!-- 리뷰 리스트 -->
         <article class="review inner">
-            <ul>
-                <li class="review-box">
+            <ul class="review">
+                <li class="review-box subscription">
                     <div class="box-top">
                         <p class="count">21회차</p>
-                        <p class="user">송*우님 남성 30대</p>
+                        <p class="user">송*우 님 남성 30대</p>
                         <p class="date">2025.05.25</p>
                     </div>
                     <div class="text">
@@ -87,10 +90,10 @@
                         </div>
                     </div>
                 </li>
-                <li class="review-box">
+                 <li class="review-box subscription">
                     <div class="box-top">
                         <p class="count">21회차</p>
-                        <p class="user">송*우님 남성 30대</p>
+                        <p class="user">송*우 님 남성 30대</p>
                         <p class="date">2025.05.25</p>
                     </div>
                     <div class="text">
@@ -115,10 +118,10 @@
                         </div>
                     </div>
                 </li>
-                <li class="review-box">
+                 <li class="review-box subscription">
                     <div class="box-top">
                         <p class="count">21회차</p>
-                        <p class="user">송*우님 남성 30대</p>
+                        <p class="user">송*우 님 남성 30대</p>
                         <p class="date">2025.05.25</p>
                     </div>
                     <div class="text">
@@ -143,10 +146,10 @@
                         </div>
                     </div>
                 </li>
-                <li class="review-box">
+                 <li class="review-box subscription">
                     <div class="box-top">
                         <p class="count">21회차</p>
-                        <p class="user">송*우님 남성 30대</p>
+                        <p class="user">송*우 님 남성 30대</p>
                         <p class="date">2025.05.25</p>
                     </div>
                     <div class="text">
@@ -171,10 +174,10 @@
                         </div>
                     </div>
                 </li>
-                <li class="review-box">
+                <li class="review-box pill">
                     <div class="box-top">
-                        <p class="count">21회차</p>
-                        <p class="user">송*우님 남성 30대</p>
+                        <p class="purchased">구매인증</p>
+                        <p class="user">송*우 님 남성 30대</p>
                         <p class="date">2025.05.25</p>
                     </div>
                     <div class="text">
@@ -199,10 +202,10 @@
                         </div>
                     </div>
                 </li>
-                <li class="review-box">
+                <li class="review-box pill">
                     <div class="box-top">
-                        <p class="count">21회차</p>
-                        <p class="user">송*우님 남성 30대</p>
+                        <p class="purchased">구매인증</p>
+                        <p class="user">송*우 님 남성 30대</p>
                         <p class="date">2025.05.25</p>
                     </div>
                     <div class="text">
@@ -227,10 +230,10 @@
                         </div>
                     </div>
                 </li>
-                <li class="review-box">
+                <li class="review-box pill">
                     <div class="box-top">
-                        <p class="count">21회차</p>
-                        <p class="user">송*우님 남성 30대</p>
+                        <p class="purchased">구매인증</p>
+                        <p class="user">송*우 님 남성 30대</p>
                         <p class="date">2025.05.25</p>
                     </div>
                     <div class="text">
@@ -255,10 +258,10 @@
                         </div>
                     </div>
                 </li>
-                <li class="review-box">
+                <li class="review-box pill">
                     <div class="box-top">
-                        <p class="count">21회차</p>
-                        <p class="user">송*우님 남성 30대</p>
+                        <p class="purchased">구매인증</p>
+                        <p class="user">송*우 님 남성 30대</p>
                         <p class="date">2025.05.25</p>
                     </div>
                     <div class="text">
@@ -283,10 +286,10 @@
                         </div>
                     </div>
                 </li>
-                <li class="review-box">
+                <li class="review-box pill">
                     <div class="box-top">
-                        <p class="count">21회차</p>
-                        <p class="user">송*우님 남성 30대</p>
+                        <p class="purchased">구매인증</p>
+                        <p class="user">송*우 님 남성 30대</p>
                         <p class="date">2025.05.25</p>
                     </div>
                     <div class="text">
@@ -311,7 +314,6 @@
                         </div>
                     </div>
                 </li>
-
 
             </ul>
         </article>

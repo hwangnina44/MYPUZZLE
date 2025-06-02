@@ -4,6 +4,7 @@ body {
     width: 100%;
     margin-top: 120px;
     font-family: 'S-Core Dream 4';
+    color: #333;
 }
 
 article.content-header {
@@ -25,7 +26,7 @@ article.content-header {
 }
 
 .content-header .lnb h2 {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 600;
     margin-bottom: 80px;
 }
@@ -41,6 +42,7 @@ article.content-header {
     border: 1px solid #878783;
     border-radius: 30px;
     color: #878784;
+    cursor: pointer;
 }
 
 .lnb nav p~p {
@@ -118,12 +120,22 @@ ul .review-box .box-top {
 
 .review-box .box-top p.count {
     padding: 4px 8px;
-    border: 1px solid #A050CC;
-    background-color: #A050CC;
+    background-color: #5B1A7C;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: 200;
+}
+
+.review-box .box-top p.purchased {
+    padding: 4px 8px;
+    background-color: #E81D75;
     color: #fff;
     border-radius: 15px;
     font-size: 12px;
     margin-right: 10px;
+   
 }
 
 .review-box .box-top p.user {
@@ -144,7 +156,9 @@ ul .review-box .box-top {
     margin-right: 16px;
 }
 
-ul .review-box .text {}
+ul .review-box .text {
+    
+}
 
 .review-box .text h2 {
     font-size: 18px;
@@ -154,6 +168,7 @@ ul .review-box .text {}
 
 .review-box .text p {
     margin-bottom: 8px;
+    color: #595959;
 }
 
 .review-box .text .btn {

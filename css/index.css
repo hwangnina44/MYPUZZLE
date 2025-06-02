@@ -5,7 +5,7 @@
 body{
     font-family: 'S-Core Dream 4';
     font-weight: 400;
-    color : #333;
+    font-size: 16px;
 }
 section {
     width: 100%;
@@ -23,12 +23,12 @@ article.sliderbanner {
 }
 
 .sliderbanner .banner {
-    width: 500%;
+    width: 400%;
 }
 
 .banner .banner-box {
     float: left;
-    width: 20%;
+    width: 25%;
 }
 
 .banner .banner-box a {
@@ -85,12 +85,12 @@ article.custom {
     display: inline-block;
     padding: 16px 32px;
     border-radius: 100px;
-    background: url(../img/icon/btn_more.png) no-repeat 148px 23px /8px;
+    background: url(../img/icon/btn_more.png) no-repeat 154px 21px /8px;
     background-color: #F7F7F7;
 } 
 .custom .title .btn:hover {
     color: #3C1152;
-    background: url(../img/icon/btn_more_on.png) no-repeat 148px 23px /8px;
+    background: url(../img/icon/btn_more_on.png) no-repeat 154px 21px /8px;
     background-color: #FBFAFF;
 }
 
@@ -102,7 +102,6 @@ article.custom {
 
 .custom ul li {
     width: 32%;
-    position: relative;
 }
 
 .custom ul li~li {
@@ -114,16 +113,6 @@ ul li .imgbox {
     width: 100%;
     height: 420px;
     overflow: hidden;
-    border-radius: 30px;
-}
-li .number {
-    font-family: 'S-Core Dream 8 ';
-    font-size: 60px;
-    font-weight: 800;
-    color:#3C1152;
-    position: absolute;
-    left: 25px;
-    top: -46px; 
 }
 
 ul li .imgbox img {
@@ -131,6 +120,7 @@ ul li .imgbox img {
 }
 
 .custom ul li .desbox {
+    position: relative;
     width: 80%;
     text-align: center;
     margin: 0 auto;
@@ -140,6 +130,16 @@ ul li .imgbox img {
     border-radius: 15px;
     background-color: #FBFAFF;
 }
+li .desbox .number {
+    font-family: 'S-Core Dream 5 ';
+    font-size: 60px;
+    font-weight: 500;
+    color:#5B1A7C;
+    position: absolute;
+    left: 20px;
+    top: -17px; 
+}
+
 
 .desbox .des h3 {
     font-size: 24px;
@@ -151,7 +151,6 @@ ul li .imgbox img {
 .desbox .des p {
     line-height: 28px;
     letter-spacing: -0.7px;
-    color: #595959;
 }
 
 .custom .icon-wrap1 .icon-box {
@@ -175,28 +174,27 @@ ul li .imgbox img {
     width: 88px;
 }
 
-.icon-wrap1 .icon-box .des {
+.icon-wrap1 .icon-box .des,
+.icon-wrap2 .icon-box .des {
     float: left;
     width: 60%;
     color: rgba(255, 255, 255, 0.8);
 }
 
 .icon-box .des h4 {
-    font-family: 'S-Core Dream 5 ';
-    font-weight: 500;
-    margin-bottom: 4px;
+    font-family: 'S-Core Dream 6 ';
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 8px;
 }
 
 .icon-box .des p {
-   
+   color: rgba(255, 255, 255, 0.7);
 }
 
 .custom .icon-wrap2 .icon-box {
     float: left;
     width: 22%;
-    /*     position: relative;
-    left: 0;
-    top: 0; */
     transform: translateX(50%);
 }
 
@@ -211,12 +209,7 @@ ul li .imgbox img {
     text-align: center;
 }
 
-.icon-wrap2 .icon-box .des {
-    float: left;
-    width: 60%;
-    color: #fff;
-}
-
+/* 리뷰뷰 */
 article.review {
     width: 100%;
     padding: 80px 0;
@@ -244,8 +237,8 @@ article.review h2 {
 .review .slider .box-wrap .box {
     
     float: left;
-    width: 7.5%;
-    margin-left: 2%;
+    width: 6.5%;
+    margin-left: 1%;
     height: 260px;
     padding: 24px ;
     background-color: #fff;
@@ -261,11 +254,12 @@ article.review h2 {
 
 .review .box a .rev-top p:first-child {
     font-size: 14px;
-    background-color: #A050CC;
-    padding: 2px 6px;
+    background-color: #5B1A7C;
+    padding: 4px 8px;
     border-radius: 30px;
     color: #fff;
     display: inline-block;
+    font-weight: 300;
 }
 
 .review .box a .rev-top p:last-child {
@@ -283,6 +277,7 @@ article.review h2 {
 .review .box a .rev-bottom p:first-child {
     font-family: 'S-Core Dream 5 ';
     font-weight: 500;
+    font-size: 18px;
     margin-bottom: 8px;
 }
 

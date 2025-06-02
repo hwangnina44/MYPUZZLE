@@ -25,33 +25,25 @@ article.content-header {
 }
 
 .content-header .lnb h2 {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 600;
     margin-bottom: 80px;
 }
 
-.content-header .lnb nav {
-    transform: translateY(-100%);
-}
-.content-header .lnb nav p {
+
+.lnb nav p {
     display: inline-block;
     padding: 4px 16px;
     font-size: 16px;
     border: 1px solid #878783;
     border-radius: 30px;
     color: #878784;
-}
-.lnb nav p.on {
     background-color: #5B1A7C;
-    border: 1px solid #5B1A7C;;
+}
+.lnb nav p a.on {
+    background-color: #5B1A7C;
     color: #fff;
 }
-.lnb nav p:hover {
-    color:#5B1A7C;
-    background-color: #FBFAFF;
-    border: 1px solid #5B1A7C;
-}
-
 .lnb nav p~p{
     margin-left: 24px;
 }
@@ -79,68 +71,42 @@ section .section-top .filter p span:last-child {
     font-weight: 500;
     color: #5B1A7C;
 }
-
 article.list {
     margin-bottom: 80px;
 }
 
 .list ul li {
-    float: left;
     width: 32%;
-    padding: 16px;
-    box-shadow: 0 0 8px #eee;
-    background-color: #FBFAFF;
-    border-radius: 30px;
-    box-sizing: border-box;
     margin-right: 2%;
     margin-bottom: 3%;
+    padding: 16px;
+    background-color: #FBFAFF;
+    box-shadow: 0 0 8px #eee;
+    box-sizing: border-box;
+    border-radius: 30px;
+    overflow: hidden;
     position: relative;
 }
-ul li:nth-child(3n) {
-    margin-right: 0;
-}
-
-ul li a p.badge-issue {
+ul li a p.issue {
     position: absolute;
-    left: 20px;
-    top: 20px;
-    padding: 2px 12px;
-    border: 1px solid #A050CC;
+    left: 16px;
+    top:16px;
+    padding: 4px 12px;
     background-color: #A050CC;
     color: #fff;
     border-radius: 15px;
     font-size: 12px;
     z-index: 99;
 }
-ul li a p.badge-vitamin {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    padding: 2px 12px;
-    border: 1px solid #10A19D;
-    background-color: #10A19D;
-    color: #fff;
-    border-radius: 15px;
-    font-size: 12px;
-    z-index: 99;
-}
-ul li a p.badge-life {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    padding: 2px 12px;
-    border: 1px solid #3C1152;
-    background-color: #3C1152;
-    color: #fff;
-    border-radius: 15px;
-    font-size: 12px;
-    z-index: 99;
+
+.list ul li:nth-child(4n){
+    margin-right:0;
 }
 
 ul li a .img-box {
-    border-radius: 16px;
-    margin-bottom: 8px;
+    border-radius: 15px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 ul li a .img-box img {
@@ -148,26 +114,31 @@ ul li a .img-box img {
     display: block;
     transition: all 0.6s;
 }
+
 ul li a .img-box:hover img {
-    transform: scale(1.2);
+    transform: scale(1.2)
 }
 
+
 ul li a .title {
-    font-size: 18px;
+    text-align: center;
+    padding-top: 16px;
 }
-li a .title h3 {
-    font-size: 16px;
-}
-li a .title .tag {
+
+li a .title p {
     display: inline-block;
     font-size: 14px;
     color: #878484;
 }
 
-li a .title .tag span {
+li a .title p span {
     color: #A050CC;
 }
 
+li a .title h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
 
 .btn-more {
     font-size: 14px;
