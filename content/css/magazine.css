@@ -40,6 +40,7 @@ article.content-header {
     border: 1px solid #878783;
     border-radius: 30px;
     color: #878784;
+    cursor: pointer;
 }
 .lnb nav p.on {
     background-color: #5B1A7C;
@@ -87,10 +88,9 @@ article.list {
 .list ul li {
     float: left;
     width: 32%;
-    padding: 16px;
     box-shadow: 0 0 8px #eee;
     background-color: #FBFAFF;
-    border-radius: 30px;
+    border-radius: 20px;
     box-sizing: border-box;
     margin-right: 2%;
     margin-bottom: 3%;
@@ -102,8 +102,8 @@ ul li:nth-child(3n) {
 
 ul li a p.badge-issue {
     position: absolute;
-    left: 20px;
-    top: 20px;
+    left: 13px;
+    top: 10px;
     padding: 2px 12px;
     border: 1px solid #A050CC;
     background-color: #A050CC;
@@ -114,8 +114,8 @@ ul li a p.badge-issue {
 }
 ul li a p.badge-vitamin {
     position: absolute;
-    left: 20px;
-    top: 20px;
+    left: 13px;
+    top: 10px;
     padding: 2px 12px;
     border: 1px solid #10A19D;
     background-color: #10A19D;
@@ -126,8 +126,8 @@ ul li a p.badge-vitamin {
 }
 ul li a p.badge-life {
     position: absolute;
-    left: 20px;
-    top: 20px;
+    left: 13px;
+    top: 10px;
     padding: 2px 12px;
     border: 1px solid #3C1152;
     background-color: #3C1152;
@@ -138,7 +138,7 @@ ul li a p.badge-life {
 }
 
 ul li a .img-box {
-    
+    border-radius: 20px 20px 0 0 ;
     margin-bottom: 16px;
     overflow: hidden;
 }
@@ -154,6 +154,7 @@ ul li a .img-box:hover img {
 
 ul li a .title {
     font-size: 18px;
+    padding: 0 16px 10px;
 }
 li a .title h3 {
     font-size: 18px;

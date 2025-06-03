@@ -50,52 +50,58 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    //3.애니메이션이 좋료될때
+    //a를복사해서 뒤에 붙여넣는데 그리고 a를 삭제한다.
+
+    //넓이
     var reviewW = $(".review .slider .box-wrap ").width();
     console.log(reviewW);
-    rev();
-    function rev() {
-        for (var n = 1; n <= reviewW; n++) {
-            $('.review .slider .box-wrap').animate({ marginLeft: -n }, 10);
-            if (n == reviewW) {
-                $('.review .slider .box-wrap').css({
-                    marginLeft: 0
-                });
-            }
+
+    var box = $(".review .slider .box-wrap .box").width();
+
+    //실행
+    //a 복사
+    var content = $('.review .slider .box-wrap .box').first().clone();
+    console.log(content);
+
+
+
+    $('.review .slider .box-wrap').animate({ marginLeft: -reviewW }, 20000, function () {
+    });
+
+
+
+
+
+
+    //영양제에 호버했을때
+    $('.pill .product').hover(
+        function () {
+
+            $(this).find('.des').show().css({
+                backgroundColor: 'rgba(0,0,0, 0.7)'
+            });
+            $(this).find('.info').hide();
+            $(this).find('.pill-img').css({
+                width: '100%',
+                float: 'none'
+            });
+            console.log("on")
+        },
+        function () {
+            console.log("off")
+            $(this).find('.des').hide();
+            $(this).find('.info').show();
+            $(this).find('.pill-img').css({
+                width: '50%',
+                float: 'left'
+            });
         }
 
-    }
+    );
+
 });
 
-$(document).ready(function () {
-
-    const num = 14938; // 최종 숫자자
-    var countTo = $('.counter').text();
-    console.log(countTo);
-
-    //1씩 증가시켜서 최종 숫자까지
-    function total() {
-        for (var i = 1; i <= num; i++) {
-            $('.counter').text(i).animate({
-                
-            },1000);
-        }
-    }
-
-    total();
 
 
-    //
-    /* $({ countNum: $counter.text() }).animate({
-      countNum: countTo
-    },
-    {
-      duration: 2000,
-      easing: 'swing',
-      step: function () {
-        $counter.text(Math.floor(this.countNum));
-      },
-      complete: function () {
-        $counter.text(this.countNum);
-      }
-    }); */
-});
+
