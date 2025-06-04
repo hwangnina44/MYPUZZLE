@@ -22,9 +22,19 @@ var stat = 0; //스크롤 상태 변경(0-실행전/허용, 1-실행중/잠금)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 $(document).ready(function () {
+    //상단바
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            $('header').addClass('bar-active');
+        } else {
+            $('header').removeClass('bar-active');
+        }
+    });
+
+    $('#title h2').fadeIn(3000);
+    $('#title p').delay(3000).fadeIn(3000);
+
     
-    $('#title h2').fadeIn(3000); 
-     $('#title p').delay(3000).fadeIn(3000); 
     $(document).on('mousewheel DOMMouseScroll', function () {
         if (stat === 1) return false;
         stat = 1;
@@ -52,7 +62,7 @@ $(document).ready(function () {
         }
         var pageTop = $('.page').eq(pageCount).offset().top;
         console.log('페이지 offset :' + pageTop);
-       
+
         $('html,body').animate({
             scrollTop: pageTop + 'px'
         }, 800, function () {

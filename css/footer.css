@@ -99,15 +99,39 @@ footer .footer-top .call {
 .call .time p {
     font-size: 12px;
 }
-
+.call .sns-btn {
+    height: 38px;
+   
+}
 .call .sns-btn a {
     display: inline-block;
-    vertical-align: middle;
+    width: 38px;
+    height: 38px;
 }
 .call .sns-btn a~a {
     margin-left: 2%;
 }
-.call .sns-btn a img {
-    width: 30px;
-    display: block;
+.call .sns-btn a.kakao {
+  background: url(../img/icon/icon_talk.png) no-repeat ;
+  background-size: auto 38px;
+}
+.call .sns-btn a.kakao:hover {
+    background: url(../img/icon/icon_talk_on.png) no-repeat ;
+    background-size: contain;
+}
+.call .sns-btn a.insta {
+    background: url(../img/icon/icon_insta.png) no-repeat;
+    background-size: contain;
+}
+.call .sns-btn a.insta:hover {
+    background: url(../img/icon/icon_insta_on.png) no-repeat;
+    background-size: contain;
+}
+.call .sns-btn a.facebook {
+    background: url(../img/icon/icon_facebook.png) no-repeat;
+    background-size: contain;
+}
+.call .sns-btn a.facebook:hover {
+    background: url(../img/icon/icon_facebook_on.png) no-repeat;
+    background-size: contain;
 }

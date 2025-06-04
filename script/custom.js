@@ -2,6 +2,15 @@
 
 
 $(function () {
+    //상단바
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 100) {
+          $('header').addClass('bar-active'); 
+        } else {
+          $('header').removeClass('bar-active'); 
+        }
+      });
+
     $(window).on('scroll', function () {
         // 현재 y 스크롤 위치
         var scrollTop=$(window).scrollTop();

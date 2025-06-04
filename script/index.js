@@ -70,7 +70,19 @@
  */
 $(document).ready(function () {
     $("header").load("header.html");
+
+    //상단바
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            $('header').addClass('bar-active');
+        } else {
+            $('header').removeClass('bar-active');
+        }
+    });
+
     $("#footer").load("footer.html");
+
+
 
     var slidW = $('.banner-box').width();
 
@@ -115,28 +127,68 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    //3.애니메이션이 좋료될때
-    //a를복사해서 뒤에 붙여넣는데 그리고 a를 삭제한다.
+
+
 
     //넓이
-    var reviewW = $(".review .slider .box-wrap ").width();
-    console.log(reviewW);
-
+    var reviewW = ($(".review .slider .box-wrap").width());
     var box = $(".review .slider .box-wrap .box").width();
-
+    console.log(reviewW, box);
     //실행
     //a 복사
-    var content = $('.review .slider .box-wrap .box').first().clone();
-    console.log(content);
-
-
-
-    $('.review .slider .box-wrap').animate({ marginLeft: -reviewW }, 20000, function () {
+    var content = $('.review .slider .box-wrap').clone().appendTo('.review .slider').css({
+        float : 'left'
     });
 
+    //console.log(content);
+   // setInterval(move,3000)
+    move();
+
+    function move() {
+
+
+        $('.review .slider .box-wrap').animate({
+            marginLeft: "-=" + reviewW
+        }, 8000, function () {
+            $('.review .slider .box-wrap').css({
+                marginLeft:0
+            });
+        });
+        $('.review .slider .box-wrap box').clone().appendTo('.review .slider .box-wrap').css({
+            float : 'left'
+        });
+    }
 
 
 
+
+
+
+    //custom icon 호버시가 안됨!
+    $('.custom .icon-box').on({
+        mouseenter: function () {
+            var img = $(this).find('img');
+            var src = img.attr('src').replace('_w2.png', '.png');
+            img.attr('src', src);
+        },
+
+        mouseleave: function () {
+            var img = $(this).find('img');
+            var src = img.attr('src').replace('.png', '_w2.png');
+            img.attr('src', src);
+        }
+    });
+    /* function () {
+       var icon = $(this).find('img').attr('src').replace('_w2.png', '');
+       console.log(icon);
+    
+       $(this).find('img').attr('src', icon+'.png');
+    
+    },
+    function () {
+       var img = (this).find('img').attr('src');
+       (this).find('img').attr('src',icon+'_W2.png')
+       console.log(img); */
 
 
     //영양제에 호버했을때
@@ -144,14 +196,13 @@ $(document).ready(function () {
         function () {
 
             $(this).find('.des').show().css({
-                backgroundColor: 'rgba(0,0,0, 0.7)'
+                backgroundColor: 'rgba(0,0,0, 0.6)'
             });
             $(this).find('.info').hide();
             $(this).find('.pill-img').css({
                 width: '100%',
                 float: 'none'
             });
-            console.log("on")
         },
         function () {
             console.log("off")
@@ -162,10 +213,20 @@ $(document).ready(function () {
                 float: 'left'
             });
         }
-
     );
 
 });
+
+
+
+
+
+
+//푸터
+
+
+
+
 
 
 
