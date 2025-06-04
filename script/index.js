@@ -171,7 +171,7 @@ $(document).ready(function () {
 
         $('.review .slider .box-wrap').animate({
             marginLeft: "-=" + reviewW
-        }, 20000, function () {
+        }, 50000, function () {
             $('.review .slider .box-wrap').css({
                 marginLeft: 0
             });
