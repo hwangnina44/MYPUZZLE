@@ -69,7 +69,6 @@
 
  */
 $(document).ready(function () {
-    $("header").load("header.html");
 
     //상단바
     $(window).scroll(function () {
@@ -79,8 +78,31 @@ $(document).ready(function () {
             $('header').removeClass('bar-active');
         }
     });
+    //
 
-    $("#footer").load("footer.html");
+    $(window).on('scroll', function () {
+        //스크롤 위치
+        var scrollTop = $(window).scrollTop();
+        //이미지 위치
+        var desBox = $('.desbox').offset().top;
+        console.log(scrollTop, desBox);
+
+        //700에 왔을때
+
+        if (scrollTop > desBox - 700) {
+            $(".custom ul li .box1").animate({
+                opacity: 1
+            }, 1000, function () {
+                $(".custom ul li .box2").animate({
+                    opacity: 1
+                }, 1000, function () {
+                    $(".custom ul li .box3").animate({
+                        opacity: 1
+                    },1000);
+                });
+            });
+        }
+    });
 
 
 
@@ -137,11 +159,11 @@ $(document).ready(function () {
     //실행
     //a 복사
     var content = $('.review .slider .box-wrap').clone().appendTo('.review .slider').css({
-        float : 'left'
+        float: 'left'
     });
 
     //console.log(content);
-   // setInterval(move,3000)
+    // setInterval(move,3000)
     move();
 
     function move() {
@@ -149,13 +171,13 @@ $(document).ready(function () {
 
         $('.review .slider .box-wrap').animate({
             marginLeft: "-=" + reviewW
-        }, 8000, function () {
+        }, 20000, function () {
             $('.review .slider .box-wrap').css({
-                marginLeft:0
+                marginLeft: 0
             });
         });
         $('.review .slider .box-wrap box').clone().appendTo('.review .slider .box-wrap').css({
-            float : 'left'
+            float: 'left'
         });
     }
 
@@ -196,7 +218,7 @@ $(document).ready(function () {
         function () {
 
             $(this).find('.des').show().css({
-                backgroundColor: 'rgba(0,0,0, 0.6)'
+                backgroundColor: 'rgba(60,17,82, 0.6)'
             });
             $(this).find('.info').hide();
             $(this).find('.pill-img').css({
