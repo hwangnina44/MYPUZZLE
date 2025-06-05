@@ -4,7 +4,7 @@
 
 */
 body {
-    font-family: 'S-Core Dream 4';
+    font-family: "Noto Sans KR", sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
@@ -73,7 +73,7 @@ article.custom {
 }
 
 .custom .title h2 {
-    font-family: 'S-Core Dream 7';
+    
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 32px;
