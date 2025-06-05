@@ -58,6 +58,7 @@
             $('.banner-box:last').prependTo('.banner');
             $('.banner').css('margin-left', -slidW);
              page--;
+             
             if (page < 1) page = totalSlides - 1;
 
             timer = setInterval(leftMove, 3000); // 다시 시작
