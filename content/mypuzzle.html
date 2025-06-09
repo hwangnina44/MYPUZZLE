@@ -3,32 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>brand</title>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mypuzzle</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="css/brand.css">
+    <link rel="stylesheet" href="css/mypuzzle.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <script src="../script/jquery-1.7.2.min.js"> </script>
-    <script src="../script/brand.js"></script>
 </head>
 
 <body>
-    <!-- 헤더 -->
+
     <header>
         <div class="top inner">
             <h1 class="logo"><a href="../index.html"><img src="../img/Logo.png" alt="my puzzle 로고"></a></h1>
 
             <nav class="gnb">
                 <ul>
-                    <li><a href="brand.html" class="active">브랜드스토리</a></li>
+                    <li><a href="brand.html">브랜드스토리</a></li>
                     <li><a href="custom.html">맞춤영양제</a></li>
-                    <li><a href="pill.html">영양제</a></li>
+                    <li><a href="pill.html" class="active">영양제</a></li>
                     <li><a href="review.html">고객후기</a></li>
-                    <li><a href="magezine.html">매거진 퍼즐</a></li>
+                    <li><a href="magazine.html">매거진 퍼즐</a></li>
                     <li><a href="mypuzzle.html">마이퍼즐</a></li>
                 </ul>
             </nav>
@@ -40,62 +36,48 @@
             </div>
         </div>
     </header>
-    <!-- 본문 -->
-    <nav>
-        <ul class="side-pager">
-            <li class="on">brend</li>
-            <li>analyze</li>
-            <li>consult</li>
-            <li>quality</li>
-        </ul>
-    </nav>
-    <section class="page" id="title">
-        <div class="inner">
-            <h2>
-                오직 한 사람을 위한 맞춤 건강 기능 식품<br>
-                나만의 건강 한 조각, 마이퍼즐
-            </h2>
-            <p>
-                우리는 생활 환경, 식습관, 건강 상태에 따라 각자 다른 건강관리가 필요하다고 생각합니다.<br>
-                마이퍼즐은 고객 한 분, 한 분에 맞춘 건강기능식품이 필요하다는 생각으로부터 출발했습니다.
-            </p>
-        </div>
-    </section>
+    <section>
+        <div class="login">
+            <form action="#" method="post" name="loginform">
 
-    <section class="page" id="analyze">
-        <div class="inner">
-            <h2>analyze</h2>
-            <div class="des">
-                <h3>건강설문</h3>
-                <p>건강과 영양을 제일 잘 아는 의사, 약사, 영양학 박사로 구성된 마이퍼즐 건강 자문단과<br>
-                    함께 개발한 알고리즘을 통해 최적화된 맞춤 설계를 완성했습니다.</p>
+                <fieldset>
+                    <legend>로그인정보</legend>
+
+                    <div class="id-box">
+                        <label for="user-name">아이디</label>
+                        <input type="text" name="user-id" placeholder="아이디를 입력해주세요">
+                    </div>
+
+                    <div class="pw-box">
+                        <label for="user-pw">비밀번호</label>
+                        <input type="password" name="user-pw" placeholder="비밀번호를 입력해주세요">
+                    </div>
+                    
+                    <div class="id-save">
+                        <label>
+                            <input type="checkbox" name="id-save" checked>아이디 저장
+                        </label>
+                    </div>
+                </fieldset>
+
+                <input type="submit" value="로그인" class="btn">
+                <div class="icon-box">
+                    <a href="#" class="icon"><img src="../img/icon/icon_talk_on.png" alt="카카오톡 자동로그인"></a>
+                    <a href="#" class="icon"><img src="../img/icon/icon_naver.png" alt="네이버 자동로그인"></a>
+                    <a href="#" class="icon"><img src="../img/icon/icon_apple.png" alt="애플 자동 로그인"></a>
+                </div>
+                
+            </form>
+
+            <div class="registe">
+                <a href="#">아이디 찾기</a>
+                <a href="#">비밀번호 찾기</a>
+                <a href="#">회원가입</a>
             </div>
         </div>
-    </section>
 
-    <section class="page" id="consult">
-        <div class="inner">
-            <h2>consult </h2>
-            <div class="des">
-                <h3>전문가 상담</h3>
-                <p>전문가와의 대화를 통해 개인의 건강 상태를 한 번 더 꼼꼼하게 확인하고<br>
-                    마이퍼즐만의 맞춤 분석을 통해 개개인에게 꼭 필요한 영양성분만을
-                    조합하여 추천합니다.</p>
-            </div>
-        </div>
     </section>
-    <section class="page" id="quality">
-        <div class="inner">
-            <h2>quality </h2>
-            <div class="des">
-                <h3>최고의 품질</h3>
-                <p>건강기능식품 유통전문기업 뉴트리원의 오랜 경험에서 비롯된 전문적인 노하우로<br>
-                    엄선된 원료 선별부터 엄격한 품질관리를 통해 생산하고, 검증된 제품만을 제공합니다.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="page">
+    <footer>
 
         <div class="footer-top inner clear">
             <ul>
@@ -154,7 +136,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
