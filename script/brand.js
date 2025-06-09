@@ -14,6 +14,26 @@
 2)wheel : 표준 코딩에서 사용하는 이벤트 명(ie, 사라피 지원안함)
 3)DOMMouseScroll : 파이어폭스 전용 이벤트 명
 */
+// 기본형 헤더로 바꾸는 함수
+function setTransparentGNB() {
+    $('header').addClass('transparent');
+    $('header').removeClass('bar-active');
+    $('.logo img').attr('src', '../img/Logo_w.png');
+    $('.login .icon-login img').attr('src', '../img/icon/icon_login_w.png');
+    $('.login .icon-cart img').attr('src', '../img/icon/icon_cart_w.png');
+
+}
+
+// 실행형 헤더로 바꾸는 함수
+function setDefaultGNB() {
+    $('header').addClass('bar-active');
+    $('header').removeClass('transparent');
+
+    $('.logo img').attr('src', 'img/Logo.png');
+    $('.login .icon-login img').attr('src', '../img/icon/icon_login.png');
+    $('.login .icon-cart img').attr('src', '../img/icon/icon_cart.png');
+}
+
 
 
 var pageCount = 0;
@@ -23,11 +43,12 @@ var stat = 0; //스크롤 상태 변경(0-실행전/허용, 1-실행중/잠금)
 /////////////////////////////////////////////////////////////////////////////////////////////////
 $(document).ready(function () {
     //상단바
+    setTransparentGNB();
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 100) {
-            $('header').addClass('bar-active');
+        if ($(window).scrollTop() > 250) {
+            setDefaultGNB();
         } else {
-            $('header').removeClass('bar-active');
+            setTransparentGNB();
         }
     });
 
