@@ -1,6 +1,6 @@
 @charset "utf-8";
 body {
-     font-family: "Noto Sans KR", sans-serif;
+    font-family: 'S-Core Dream 4';
     font-size: 16px;
     overflow-x: hidden;
 }
@@ -43,7 +43,7 @@ article.banner {
     font-size: 16px;
     font-weight: 400;
     color: #fff;
-    background-color: #3C1152;
+    border: 1px solid #fff;
     border-radius: 100px;
     text-align: center;    
 }

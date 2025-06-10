@@ -3,7 +3,7 @@
 body {
     width: 100%;
     margin-top: 130px;
-     font-family: "Noto Sans KR", sans-serif;
+    font-family: 'S-Core Dream 4';
     color: #333;
 }
 
@@ -147,7 +147,7 @@ ul .review-box .box-top {
     background-color: #E81D75;
     color: #fff;
     border-radius: 15px;
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 10px;
 
 }

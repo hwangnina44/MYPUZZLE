@@ -8,6 +8,7 @@ body {
 }
 
 body {
+    font-family: 'S-Core Dream 4';
     position: relative;
 }
 nav ul.side-pager {
@@ -40,7 +41,7 @@ nav ul.side-pager li.on {
 
 }
 
-#title > div {
+#title div {
     text-align: center;
     position: absolute;
     left: 50%;
@@ -60,7 +61,7 @@ nav ul.side-pager li.on {
 
 #title p {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 42px;
     color: #fff;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     display: none;
@@ -72,6 +73,44 @@ nav ul.side-pager li.on {
     background: url(../img/brand_list1.jpg) no-repeat center /cover;
     position: relative;
 }
+
+#analyze h2,
+#consult h2,
+#quality h2 {
+    font-size: 80px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: 'S-Core Dream 6';
+    font-weight: 600;
+    margin-bottom: 60px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+
+#analyze .des,
+#consult .des,
+#quality .des {
+    font-size: 24px;
+    line-height: 42px;
+    color: #fff;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    display: none;
+}
+
+#analyze .des h3,
+#consult .des h3,
+#quality .des h3 {
+    font-family: 'S-Core Dream 5';
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
 #consult {
     width: 100%;
     height: 100%;
@@ -84,37 +123,4 @@ nav ul.side-pager li.on {
     height: 100%;
     background: url(../img/brand_list3.jpg) no-repeat center /cover;
     position: relative;
-}
-
-#analyze h2,
-#consult h2,
-#quality h2 {
-    font-size: 60px;
-    letter-spacing: 2px;
-    color: #fff;
-    font-weight: 800;
-    margin-bottom: 60px;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    left: 20%;
-    top: 30%;
-}
-
-section.page .des {
-    color: #fff;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    right: 10%;
-    bottom: 20%;
-    display: none;
-}
-
-section.page .des h3{
-    font-size: 32px;
-    font-weight: 500;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-section.page .des p {
-    font-size: 24px;
 }
