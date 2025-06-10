@@ -86,7 +86,7 @@ $(document).ready(function () {
         function () {
 
             $(this).find('.des').show().css({
-                backgroundColor: 'rgba(60,17,82, 0.6)'
+                backgroundColor: 'rgba(151,71,255, 0.6)'
             });
             $(this).find('.info').hide();
             $(this).find('.pill-img').css({

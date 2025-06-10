@@ -18,6 +18,7 @@ $(function () {
         // 이미지 y 위치
 
         var img1OffsetTop =$('.imgbox1').offset().top;
+        console.log(img1OffsetTop);
 
         // 두 값을 비교해서
         if(scrollTop > img1OffsetTop -600){

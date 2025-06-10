@@ -77,15 +77,6 @@ header .top .login .btn:hover {
     background-image: linear-gradient(to bottom right, #782c9e, #5B1A7C, #3C1152);
 }
 
-.login .btn::after {
-    content: "";
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    background: url(../img/icon/btn_more_W.png) no-repeat 3px 0px 14px;
-}
-
-
 /* 스크립트 추가 */
 header.bar-active {
     width: 100%;
@@ -120,14 +111,6 @@ header.bar-active .login .btn {
     padding: 6px 12px;
     border-radius: 30px;
     font-size: 14px;
-}
-
-header.bar-active .login .btn::after {
-    content: "";
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    background: url(../img/icon/btn_more.png) no-repeat 3px 0px;
 }
 
 header.bar-active .top .gnb {
