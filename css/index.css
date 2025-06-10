@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 body {
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 400;
@@ -23,7 +24,7 @@ article.slide {
     display: flex;
     flex-direction: "row";
     width: 300%;
-    
+
 }
 
 .banner .banner-box {
@@ -47,11 +48,13 @@ article.slide {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .banner .box1 {
     background-color: #3c1152;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .banner .box2 {
     background-color: red;
     background-repeat: no-repeat;
@@ -72,7 +75,7 @@ article.slide {
 .slide .title p {
     font-size: 18px;
     color: #fff;
-        font-weight: 400;
+    font-weight: 400;
     line-height: 28px;
     margin-bottom: 32px;
 }
@@ -93,7 +96,8 @@ article.slide .pager {
     bottom: 30px;
     transform: translateX(-50%);
 }
-article.slide .pager > a {
+
+article.slide .pager>a {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -103,9 +107,11 @@ article.slide .pager > a {
     background-color: transparent;
     margin: 0 5px;
 }
+
 article.slide .pager a.active {
     background-color: #fff;
 }
+
 /* custom */
 article.custom {
     width: 100%;
@@ -118,14 +124,19 @@ article.custom {
 }
 
 .custom .title {
-    text-align: center;
     margin-bottom: 54px;
 }
 
 .custom .title h2 {
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.custom .title h2 span {
+   color: #782D9E;
+   font-size: 18px;
 }
 
 .custom .title p {
@@ -143,7 +154,7 @@ article.custom {
 .custom ul li {
     width: 32%;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 160px;
 }
 
 .custom ul li~li {
@@ -207,11 +218,19 @@ ul li .img-box img {
     justify-content: space-between;
 }
 
+.customsub {
+    position: relative;
+}
+
+/* tnwjd */
 .customsub h2 {
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 600;
-    font-size: 60px;
-    margin-bottom: 80px;
+    color: rgba(46, 46, 47, 0.00);
+    -webkit-text-stroke: 1px #AEAEAE;
+    font-weight: 900;
+    font-size: 6rem;
+    position: absolute;
+    left: 0;
+    top: -68%;
 }
 
 .customsub .icon-wrap .icon-box {
@@ -246,6 +265,7 @@ article.review h2 {
     font-weight: 700;
     margin-bottom: 80px;
 }
+
 article.review h2 span {
     color: #782D9E;
     font-size: 42px;
@@ -433,7 +453,7 @@ article.magazine .title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-self:flex-end
+    align-self: flex-end
 }
 
 
@@ -442,6 +462,7 @@ article.magazine .title h2 {
     font-weight: 700;
     margin-bottom: 40px;
 }
+
 .magazine .title .btn {
     font-size: 14px;
     color: #878484;
@@ -505,13 +526,13 @@ article.magazine .title h2 {
 
 /* q&a */
 article.qa {
-   width: 100%;
+    width: 100%;
 }
 
 .qa .service {
     float: left;
     width: 50%;
-    padding:24px;
+    padding: 24px;
     box-sizing: border-box;
     background-color: #4B227A;
 }
@@ -538,7 +559,7 @@ article.qa {
 .qa .notice {
     float: left;
     width: 50%;
-    padding:24px;
+    padding: 24px;
     box-sizing: border-box;
     background-color: #0197AF;
 }
@@ -560,5 +581,5 @@ article.qa {
     font-size: 14px;
     color: #fff;
     margin-top: 28px;
-    
+
 }
