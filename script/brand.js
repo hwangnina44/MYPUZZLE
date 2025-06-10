@@ -30,21 +30,7 @@ $(document).ready(function () {
     $('#mypuzzle h2').fadeIn(3000);
     $('#mypuzzle p').delay(3000).fadeIn(3000);
 
-    $('.side-pager li a').on('click', function(e){
-        //a의 기본기능 막기!
-        e.preventDefault();
-        var idx = $(this).parent().index();
-        console.log(idx);
-        pageCount = idx;
 
-        $('.side-pager li').eq(pageCount).addClass('on').siblings().removeClass('on');
-        
-        var pageTop = $('.page').eq(pageCount).offset().top;
-        
-        $('html, body').animate({
-            scrollTop: pageTop
-        }, 800);
-    });
 
     
     $(document).on('mousewheel DOMMouseScroll', function () {
@@ -75,6 +61,7 @@ $(document).ready(function () {
         $('html,body').animate({
             scrollTop: pageTop + 'px'
         }, 800, function () {
+            $('.page').eq(pageCount).find('.des').fadeIn();
             stat = 0;
         });
         
