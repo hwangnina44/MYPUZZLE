@@ -6,12 +6,12 @@ body {
     overflow-x: hidden;
 }
 section {
-    margin-top: 130px;
+    
 }
 
 article.banner {
     width: 100%;
-    height: 600px;
+    height: 850px;
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,9 +20,9 @@ article.banner {
 }
 
 .banner .title {
-    text-align: center;
+
     color: #fff;
-    transform: translateY(50%);
+    transform: translateY(100%);
 }
 
 .banner .title h2 {
@@ -32,7 +32,7 @@ article.banner {
 
 .banner .title p {
     font-size: 18px;
-    text-shadow: 0 0 4px #d9d9d9;
+
     margin-bottom: 50px;
 }
 
@@ -56,6 +56,7 @@ article.banner {
     color: #fff;
     border-radius: 100px;
     background-color: #3C1152;
+    border: 1px solid #3C1152;
     text-align: center;
 }
 
@@ -93,27 +94,17 @@ article.step {
     height: 120px;
 }
 
-.step-des .btn a{
-    display: inline-block;
-    padding: 14px 40px;
-    font-size: 16px;
+.step-des .btn {
     font-weight: 400;
-    color: #5B1A7C;
-    background-color: #FBFAFF;
-    border: 1px solid #5B1A7C;
-    border-radius: 100px;
-    text-align: center;    
+    color: #595959;
+    font-size: 14px;
+    padding:  0 40px 0 0 ;
+    background-image: url(../../img/icon/more_b.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer; 
 }
-.step-des .btn a:hover{
-    display: inline-block;
-    padding: 14px 40px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
-    border-radius: 100px;
-    background-color: #3C1152;
-    text-align: center;
-}
+
 
 .step-des .boxwrap .box {
     float: left;

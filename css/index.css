@@ -115,39 +115,19 @@ article.slide .pager a.active {
 /* custom */
 article.custom {
     width: 100%;
-    background-image: url(../img/brand_fixImg_list4.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 50%;
-    background-position: bottom;
-    padding-bottom: 120px;
     margin-bottom: 120px;
-    overflow: hidden;
-    position: relative;
-    z-index: 100;
-
 }
 
-article.custom::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 50%;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(55, 25, 125, 1) 100%);
-    /*  background-color: rgba(113, 37, 236, 0.4); */
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-}
 
 article.custom .inner {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .custom .title {
-    height: 700px;
     margin-bottom: 54px;
-
+    outline: 1px solid red;
 }
 
 .custom .title h2 {
@@ -167,34 +147,32 @@ article.custom .inner {
     margin-bottom: 80px;
     line-height: 28px;
 }
+
 .custom .title .btn {
     color: #595959;
     font-size: 14px;
-    padding:  0 40px 0 0 ;
+    padding: 0 40px 0 0;
     background-image: url(../img/icon/more_b.jpg);
     background-repeat: no-repeat;
     background-position: center right;
     cursor: pointer;
-    
+
 }
 
 /* content box */
 .custom .content-wrap {
-    width: 40%;
-    position: absolute;
-    right: 0;
-    top: 24px;
-
-
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
+
 .content-wrap .content {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
     position: relative;
-    margin-bottom: 40px;
-    border-radius: 20px;
+    overflow: hidden;
+      width: 300px;
+    height: 350px;
 }
+
 .content-wrap .content::after {
     content: "";
     display: block;
@@ -202,15 +180,24 @@ article.custom .inner {
     height: 100%;
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 0;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.4);
-} 
+}
 
-.content .img-box {}
-.content .img-box a {}
-.content .img-box a img{
-  width: 100%;
+.content .img-box {
+    width: 300px;
+    height: 250px;
+}
+
+.content .img-box a {
+    width: 100%;
+    display: block;
+}
+
+.content .img-box a img {
+    display: block;
+     width: 100%;
 }
 
 .content-wrap .content .des-box {}
@@ -219,14 +206,16 @@ article.custom .inner {
 .content .des-box {
     position: absolute;
     left: 24px;
-    top: 24px;
+    bottom:0 ;
     z-index: 11;
 }
-.content .des-box h3{
+
+.content .des-box h3 {
     font-size: 24px;
     color: #fff;
     margin-bottom: 24px;
 }
+
 .content .des-box p {
     color: #fff;
 }
@@ -234,7 +223,30 @@ article.custom .inner {
 
 
 /* 아이콘 */
-.custom .icon-wrap {
+article.season {
+    width: 100%;
+    background-image: url(../img/brand_fixImg_list4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    position: relative;
+
+    margin-bottom: 120px;
+}
+
+article.season::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(55, 25, 125, 1) 100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.customsub .icon-wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -401,7 +413,7 @@ article.pill .title h2 {
 .pill .title .btn {
     font-size: 14px;
     color: #878484;
-    padding:  0 40px 0 0 ;
+    padding: 0 40px 0 0;
     background-image: url(../img/icon/more_b.jpg);
     background-repeat: no-repeat;
     background-position: center right;
@@ -513,7 +525,7 @@ article.magazine .title h2 {
     font-size: 14px;
     color: #878484;
     font-size: 14px;
-    padding:  0 40px 0 0 ;
+    padding: 0 40px 0 0;
     background-image: url(../img/icon/more_b.jpg);
     background-repeat: no-repeat;
     background-position: center right;
