@@ -3,7 +3,6 @@
 body {
     width: 100%;
     margin-top: 130px;
-    font-family: 'S-Core Dream 4';
     color: #333;
 }
 
@@ -85,8 +84,7 @@ section .section-top .filter p span:last-child {
 
 .section-top .count span {
     font-size: 20px;
-    font-family: 'S-Core Dream 5';
-    font-weight: 500;
+    font-weight: 600;
     color: #5B1A7C;
 }
 

@@ -3,7 +3,6 @@
 body {
     width: 100%;
     margin-top: 130px;
-    font-family: 'S-Core Dream 4';
 }
 
 article.content-header {
@@ -76,7 +75,6 @@ section .section-top .filter p span:last-child {
 }
 .section-top .count span{
     font-size: 20px;
-    font-family: 'S-Core Dream 5';
     font-weight: 500;
     color: #5B1A7C;
 }
@@ -89,8 +87,7 @@ article.list {
     margin-right: 2%;
     margin-bottom: 3%;
     padding: 16px;
-    box-shadow: 0 0 8px #eee;
-    background-color: #FBFAFF;
+    border: 1px solid #eee;
     box-sizing: border-box;
     border-radius: 30px;
     overflow: hidden;
@@ -130,14 +127,12 @@ li a .info .tag span {
 }
 
 li a .info h3 {
-    font-family: 'S-Core Dream 5';
     font-weight: 500;
 
 }
 
 li a .info .price {
     font-size: 18px;
-    font-family: 'S-Core Dream 4';
     font-weight: 600;
     color:#E81D75;
     margin-bottom: 4px;

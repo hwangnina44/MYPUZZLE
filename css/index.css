@@ -50,7 +50,7 @@ article.slide {
 }
 
 .banner .box1 {
-    background-color: #3c1152;
+    background-image: url(../img/banner3-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -124,32 +124,36 @@ article.custom {
     overflow: hidden;
     position: relative;
     z-index: 100;
-    
+
 }
+
 article.custom::after {
     content: "";
     display: block;
     width: 100%;
     height: 50%;
-   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(55, 25, 125, 1) 100%); 
-   /*  background-color: rgba(113, 37, 236, 0.4); */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(55, 25, 125, 1) 100%);
+    /*  background-color: rgba(113, 37, 236, 0.4); */
     position: absolute;
     left: 0;
-    bottom:0;
+    bottom: 0;
     z-index: 1;
-    
+}
+
+article.custom .inner {
+    position: relative;
 }
 
 .custom .title {
+    height: 700px;
     margin-bottom: 54px;
-   
+
 }
 
 .custom .title h2 {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 32px;
-    position: relative;
 }
 
 .custom .title h2 span {
@@ -163,34 +167,35 @@ article.custom::after {
     margin-bottom: 80px;
     line-height: 28px;
 }
-
-.custom ul {
-    width: 1280px;
-    margin: 0 auto;
+.custom .title .btn {
+    color: #595959;
+    font-size: 14px;
+    padding:  0 40px 0 0 ;
+    background-image: url(../img/icon/more_b.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+    
 }
 
-.custom ul li {
-    width: 30.5%;
-    text-align: center;
-    margin-bottom: 80px;
-}
+/* content box */
+.custom .content-wrap {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 24px;
 
-.custom ul li~li {
-    margin-left: 4%;
-}
 
-ul li .img-box {
+}
+.content-wrap .content {
     width: 100%;
-    height: 405px;
+    height: 200px;
     overflow: hidden;
     position: relative;
+    margin-bottom: 40px;
     border-radius: 20px;
-    box-sizing: border-box;
-    margin-top: 40px;
-    z-index: 8;
 }
-
-ul li .img-box::after {
+.content-wrap .content::after {
     content: "";
     display: block;
     width: 100%;
@@ -200,35 +205,35 @@ ul li .img-box::after {
     top: 0;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.4);
+} 
+
+.content .img-box {}
+.content .img-box a {}
+.content .img-box a img{
+  width: 100%;
 }
 
-ul li .img-box img {
-    width: 100%;
-}
+.content-wrap .content .des-box {}
 
-.custom ul li .img-box .des-box {
-    color: #fff;
-    text-shadow: 0 0 2px #eee;
+
+.content .des-box {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 30%;
+    left: 24px;
+    top: 24px;
     z-index: 11;
-    width: 300px;
 }
-
-.des-box .des h3 {
+.content .des-box h3{
     font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 18px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+.content .des-box p {
+    color: #fff;
 }
 
-.des-box .des p {
-    line-height: 28px;
-    letter-spacing: -0.7px;
-    margin-bottom: 16px;
-}
 
+
+/* 아이콘 */
 .custom .icon-wrap {
     display: flex;
     flex-direction: row;
@@ -240,7 +245,7 @@ ul li .img-box img {
     z-index: 9;
 }
 
-/* tnwjd */
+/* 아이콘 박스 */
 .customsub h2 {
     color: #fff;
     font-weight: 600;
@@ -256,20 +261,21 @@ ul li .img-box img {
 .customsub .icon-wrap .icon-box {
     width: 200px;
     text-align: center;
-    padding: 24px 16px;
+    padding: 30px 16px;
     border-radius: 20px;
-    background-color: rgba(39, 7, 63, 0.7)
+    background-color: rgba(0, 0, 0, 0.2)
 }
 
 .icon-box .des h4 {
     font-weight: 600;
     font-size: 18px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     color: #fff;
 }
 
 .icon-box .des p {
     font-size: 16px;
+    height: 80px;
     color: #fff;
 }
 
@@ -285,10 +291,12 @@ article.review h2 {
     font-weight: 700;
     margin-bottom: 80px;
 }
+
 article.review h2 span:first-child {
-    color :#782D9E;
-    font-size:18px;
+    color: #782D9E;
+    font-size: 18px;
 }
+
 article.review h2 span.counter {
     color: #782D9E;
     font-size: 42px;
@@ -309,16 +317,16 @@ article.review h2 span.counter {
 
 .review .slider .box-wrap .box {
     display: inline-block;
-    width: 250px;
+    width: 296px;
     margin-left: 32px;
     margin-bottom: 32px;
-    height: 260px;
     padding: 24px;
-    box-shadow: 0 0 4px #c9c9c9;
     /* box-shadow: 0 0 8px #5B1A7C; */
-    border-radius: 30px;
+    border-radius: 30px 30px 30px 0;
+    border: 1px solid #eee;
     box-sizing: border-box;
 }
+
 
 .review .box a .rev-top {
     position: relative;
@@ -326,11 +334,12 @@ article.review h2 span.counter {
 }
 
 .review .box a .rev-top p:first-child {
-    font-size: 12px;
-    background-color: #3c1152;
+    font-size: 14px;
     padding: 2px 8px;
-    border-radius: 30px;
-    color: #fff;
+    border: 1px solid #26A6CC;
+    border-radius: 100px;
+    color: #26A6CC;
+    font-weight: 600;
     display: inline-block;
 }
 
@@ -347,15 +356,15 @@ article.review h2 span.counter {
 }
 
 .review .box a .rev-bottom p:first-child {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
-    margin-bottom: 8px;
+    margin-bottom: 14px;
 }
 
 .review .box a .rev-bottom p:last-child {
     color: #595959;
     line-height: 28px;
-    height: 80px;
+    height: 100px;
     overflow: hidden;
 }
 
@@ -377,6 +386,7 @@ article.pill .title h2 {
     font-weight: 700;
     margin-bottom: 40px;
 }
+
 .pill .title h2 span {
     font-size: 18px;
     color: #782D9E;
@@ -391,6 +401,10 @@ article.pill .title h2 {
 .pill .title .btn {
     font-size: 14px;
     color: #878484;
+    padding:  0 40px 0 0 ;
+    background-image: url(../img/icon/more_b.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
     cursor: pointer;
 }
 
@@ -489,6 +503,7 @@ article.magazine .title h2 {
     font-weight: 700;
     margin-bottom: 40px;
 }
+
 .magazine h2 span {
     color: #782D9E;
     font-size: 18px;
@@ -497,7 +512,11 @@ article.magazine .title h2 {
 .magazine .title .btn {
     font-size: 14px;
     color: #878484;
-    cursor: pointer;
+    font-size: 14px;
+    padding:  0 40px 0 0 ;
+    background-image: url(../img/icon/more_b.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
 }
 
 .magazine-top nav ul li a {

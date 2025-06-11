@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 body {
-    font-family: 'S-Core Dream 4';
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
     font-size: 16px;
     color: #333;
 }
