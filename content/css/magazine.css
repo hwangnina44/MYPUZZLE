@@ -78,7 +78,6 @@ section .section-top .filter p span:last-child {
 }
 .section-top .count span{
     font-size: 20px;
-    font-family: 'S-Core Dream 5';
     font-weight: 500;
     color: #5B1A7C;
 }
@@ -90,9 +89,7 @@ article.list {
 .list ul li {
     float: left;
     width: 32%;
-    box-shadow: 0 0 8px #eee;
-    background-color: #FBFAFF;
-    border-radius: 20px;
+    border: 1px solid #eee;
     box-sizing: border-box;
     margin-right: 2%;
     margin-bottom: 3%;
@@ -140,7 +137,6 @@ ul li a p.badge-life {
 }
 
 ul li a .img-box {
-    border-radius: 20px 20px 0 0 ;
     margin-bottom: 16px;
     overflow: hidden;
 }

@@ -2,21 +2,28 @@
 
 footer {
     width: 100%;
-    background-color: #2F133E;
+    background-color: #1B032D;
     color: rgba(255, 255, 255, 0.8);
     max-width: 1920px;
-    margin: 0 auto;
 }
 
+footer  {}
 footer .footer-top {
-    padding: 40px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    outline: 1px solid #fff;
 }
 
-.footer-top ul {
-    padding: 16px 0;
-    border-width: 1px 0;
-    border-style: solid;
-    border-color: rgba(255, 255, 255, 0.3)
+footer .footer-top .footer-logo {
+}
+
+.footer-top .footer-logo img {
+    display: block;
+}
+
+footer .footer-top ul {
 }
 
 .footer-top ul li {
@@ -26,18 +33,15 @@ footer .footer-top {
     color: rgba(255, 255, 255, 0.8);
 }
 .footer-top ul li~li {
-    margin-left: 20px;
 }
 
 
-.footer-top .copyright {
-    float: left;
-    width: 70%;
+.footer .copyright {
+
     height: 200px;
 }
 
-
-.footer-top .copyright .info {
+.footer .copyright .info {
     margin: 20px 0;
     font-size: 12px;
 }
@@ -71,8 +75,6 @@ footer .footer-top {
 
 footer .footer-top .call {
     text-align: right;
-    float: right;
-    width: 30%;
     margin: 30px 0;
     font-size: 12px;
 }
@@ -100,20 +102,20 @@ footer .footer-top .call {
     font-size: 12px;
 }
 .call .sns-btn {
-    height: 38px;
+    height: 32px;
    
 }
 .call .sns-btn a {
     display: inline-block;
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
 }
 .call .sns-btn a~a {
     margin-left: 2%;
 }
 .call .sns-btn a.kakao {
   background: url(../img/icon/icon_talk.png) no-repeat ;
-  background-size: auto 38px;
+  background-size: auto 32px;
 }
 .call .sns-btn a.kakao:hover {
     background: url(../img/icon/icon_talk_on.png) no-repeat ;

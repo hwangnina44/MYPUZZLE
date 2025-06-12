@@ -5,29 +5,41 @@
     margin: 0;
     padding: 0;
 }
-ul,ol,li {
+
+ul,
+ol,
+li {
     list-style: none;
 }
-ul::after, ol::after {
+
+ul::after,
+ol::after {
     content: "";
     display: block;
     clear: both;
 }
+
 li {
-    float:left;
+    float: left;
 }
+
 a {
     text-decoration: none;
     color: #333
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: 100%;
     font-weight: normal;
 }
+
 .clear::after {
     content: "";
     display: block;
     clear: both;
 }
-

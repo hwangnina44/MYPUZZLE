@@ -83,7 +83,7 @@ section .section-top .filter p span:last-child {
 }
 
 .section-top .count span {
-    font-size: 20px;
+    font-size: 20px;t
     font-weight: 600;
     color: #5B1A7C;
 }
@@ -107,8 +107,7 @@ article.review .reviewwrap{
     margin-bottom: 3%;*/
 
     padding: 24px;
-    box-shadow: 0 0 8px #eee;
-    background-color: #FBFAFF;
+    border: 1px solid #eee;
     border-radius: 30px;
     box-sizing: border-box;
    
