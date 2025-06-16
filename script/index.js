@@ -137,12 +137,13 @@ $(document).ready(function () {
         // li 하나의 너비를 구하자!
     
         var boxWidth = $('.box-wrap .box').outerWidth();
+        console.log(boxWidth+'박스너비');
     
         //if else 문
         if (moveNum > boxWidth) {
 
             $('.box-wrap').append($('.box-wrap .box').first()).css({
-                left: 0
+                left: 0,
             });
     
             moveNum = 0;   
