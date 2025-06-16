@@ -148,7 +148,17 @@ header.transparent .login .btn {
     background-color: transparent;
     background-image : none;
     border: 1px solid #fff;
+    box-sizing: border-box;
     padding: 6px 12px;
     border-radius: 30px;
     font-size: 14px;
+}
+header.transparent .login .btn:hover {
+    color: #fff;
+    background-image : none;
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight:800;
+    box-sizing: border-box;
 }

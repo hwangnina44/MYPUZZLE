@@ -130,7 +130,7 @@ article.custom {
 }
 
 .custom .title h2 span {
-    color: #782D9E;
+    color: #8121DD;
     font-size: 18px;
 }
 
@@ -144,13 +144,23 @@ article.custom {
 .custom .title .btn {
     color: #595959;
     font-size: 14px;
+    font-weight: 600;
     padding: 0 40px 0 0;
     background-image: url(../img/icon/more_b.jpg);
     background-repeat: no-repeat;
     background-position: center right;
     cursor: pointer;
-
 }
+.custom .title .btn:hover {
+    color: #5B1A7C;
+    font-size: 14px;
+    padding: 0 40px 0 0;
+    background-image: url(../img/icon/more.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+
 
 /* content box */
 .custom .content-wrap {
@@ -251,15 +261,18 @@ article.season::after {
 }
 
 /* 아이콘 박스 */
-.customsub h2 {
+.customsub .title {
     color: #fff;
+    margin-bottom: 80px;
+}
+.customsub .title h2 {
     font-weight: 600;
     font-size: 40px;
     margin-bottom: 32px;
 }
 
 .customsub h2 span {
-    color: #782D9E;
+    color: #8121DD;
     font-size: 18px;
 }
 
@@ -289,23 +302,47 @@ article.review {
     width: 100%;
     margin-bottom: 160px;
 }
-
-article.review h2 {
+article.review .title{
     text-align: center;
+    margin-bottom: 80px;
+}
+
+article.review .title h2 {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 80px;
 }
 
-article.review h2 span:first-child {
-    color: #782D9E;
+.review .title h2 span:first-child {
+    color: #8121DD;
     font-size: 18px;
 }
 
-article.review h2 span.counter {
+.review .title .counter {
     color: #782D9E;
     font-size: 42px;
     font-weight: 800;
+}
+
+.review .title .btn {
+    color: #595959;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 40px 0 0;
+    background-image: url(../img/icon/more_b.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+
+.review .title .btn:hover {
+    color: #5B1A7C;
+    font-size: 14px;
+    padding: 0 40px 0 0;
+    background-image: url(../img/icon/more.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
 }
 
 
@@ -395,7 +432,7 @@ article.pill .title h2 {
 
 .pill .title h2 span {
     font-size: 18px;
-    color: #782D9E;
+    color: #8121DD;
 }
 
 .pill .title p {
@@ -406,9 +443,19 @@ article.pill .title h2 {
 
 .pill .title .btn {
     font-size: 14px;
-    color: #878484;
+    color: #333;
     padding: 0 40px 0 0;
     background-image: url(../img/icon/more_b.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+.pill .title .btn:hover {
+    font-size: 14px;
+    font-weight: 600;
+    color: #5B1A7C;
+    padding: 0 40px 0 0;
+    background-image: url(../img/icon/more.jpg);
     background-repeat: no-repeat;
     background-position: center right;
     cursor: pointer;
@@ -508,6 +555,7 @@ article.magazine .title h2 {
 }
 
 .magazine h2 span {
+    color: #8121DD;
     font-size: 18px;
 }
 .magazine .title .btn {
@@ -515,7 +563,7 @@ article.magazine .title h2 {
     right: 0;
     bottom: 0;
 }
-.magazine .title .btn a {
+.magazine .title .btn {
     font-size: 14px;
     color: #878484;
     font-size: 14px;
@@ -523,12 +571,16 @@ article.magazine .title h2 {
     background-image: url(../img/icon/more_b.jpg);
     background-repeat: no-repeat;
     background-position: center right;
-    align-items: end;
 }
-
-.magazine-top nav ul li a {
-    display: inline-block;
-    padding: 0 12px;
+.magazine .title .btn:hover {
+    font-size: 14px;
+    font-weight: 600;
+    color: #5B1A7C;
+    padding: 0 40px 0 0;
+    background-image: url(../img/icon/more.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
 }
 
 .magazine ul li.magazine-box {

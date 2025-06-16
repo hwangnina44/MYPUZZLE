@@ -136,7 +136,7 @@ $(document).ready(function () {
         // li 하나의 너비보다 이동한 left값(moveNum)이 커졌을 때 
         // li 하나의 너비를 구하자!
     
-        var boxWidth = $('.box-wrap .box').first().outerWidth();
+        var boxWidth = $('.box-wrap .box').outerWidth();
     
         //if else 문
         if (moveNum > boxWidth) {
