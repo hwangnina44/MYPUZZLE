@@ -5,7 +5,9 @@ footer {
     background-color: #1B032D;
     color: rgba(255, 255, 255, 0.8);
     max-width: 1920px;
+    margin: 0 auto;
     padding: 40px 0 60px;
+    box-sizing: border-box;
 }
 footer .footer-top {
     padding-bottom: 24px;
