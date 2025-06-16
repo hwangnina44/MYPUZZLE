@@ -11,6 +11,7 @@ section {
     max-width: 1920px;
     margin: 0 auto;
 }
+
 /* 배너 */
 article.slide {
     width: 100%;
@@ -126,7 +127,7 @@ article.custom {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 32px;
-    
+
 }
 
 .custom .title h2 span {
@@ -151,6 +152,7 @@ article.custom {
     background-position: center right;
     cursor: pointer;
 }
+
 .custom .title .btn:hover {
     color: #5B1A7C;
     font-size: 14px;
@@ -166,7 +168,7 @@ article.custom {
 .custom .content-wrap {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .content-wrap .content {
@@ -199,14 +201,14 @@ article.custom {
 
 .content .img-box a img {
     display: block;
-     width: 100%;
+    width: 100%;
 }
 
 
 .content .des-box {
     position: absolute;
     left: 24px;
-    bottom:0 ;
+    bottom: 0;
     z-index: 11;
     margin-bottom: 24px;
 }
@@ -265,6 +267,7 @@ article.season::after {
     color: #fff;
     margin-bottom: 80px;
 }
+
 .customsub .title h2 {
     font-weight: 600;
     font-size: 40px;
@@ -302,7 +305,8 @@ article.review {
     width: 100%;
     margin-bottom: 160px;
 }
-article.review .title{
+
+article.review .title {
     text-align: center;
     margin-bottom: 80px;
 }
@@ -365,11 +369,24 @@ article.review .title h2 {
     width: 250px;
     height: 250px;
     padding: 24px;
-    margin-left:10px;
+    margin-left: 10px;
     /* box-shadow: 0 0 8px #5B1A7C; */
     border-radius: 30px 30px 30px 0;
     border: 1px solid #eee;
     box-sizing: border-box;
+}
+
+.slider .box-wrap .box:hover {
+    width: 250px;
+    height: 250px;
+    padding: 23px;
+    margin-left: 10px;
+    border: 2px solid #26A6CC;
+    box-sizing: border-box;
+}
+.box-wrap .box:hover .rev-bottom {
+    transform: scale(1.1);
+    overflow: hidden;
 }
 
 
@@ -398,6 +415,7 @@ article.review .title h2 {
 
 .review .box a .rev-bottom {
     margin-bottom: 8px;
+    transition: all 1s;
 }
 
 .review .box a .rev-bottom p:first-child {
@@ -452,6 +470,7 @@ article.pill .title h2 {
     background-position: center right;
     cursor: pointer;
 }
+
 .pill .title .btn:hover {
     font-size: 14px;
     font-weight: 600;
@@ -560,11 +579,13 @@ article.magazine .title h2 {
     color: #8121DD;
     font-size: 18px;
 }
+
 .magazine .title .btn {
     position: absolute;
     right: 0;
     bottom: 0;
 }
+
 .magazine .title .btn {
     font-size: 14px;
     color: #878484;
@@ -574,6 +595,7 @@ article.magazine .title h2 {
     background-repeat: no-repeat;
     background-position: center right;
 }
+
 .magazine .title .btn:hover {
     font-size: 14px;
     font-weight: 600;

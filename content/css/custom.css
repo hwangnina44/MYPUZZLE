@@ -154,7 +154,7 @@ article.custom {
 }
 .stepbox .imgbox2 {
     position: relative;
-    left: -300px;
+    left: 300px;
     opacity: 0;
     transition: all 3s;
 }.stepbox .imgbox3 {

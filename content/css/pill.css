@@ -3,6 +3,10 @@
 body {
     width: 100%;
     margin-top: 130px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
 }
 
 article.content-header {
@@ -13,14 +17,14 @@ article.content-header {
     background-size: cover;
     /* background-position: center; */
     text-align: center;
-    position: relative;    
+    position: relative;
 }
 
 .content-header .lnb {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .content-header .lnb h2 {
@@ -30,6 +34,7 @@ article.content-header {
 .content-header .lnb nav {
     transform: translateY(-100%);
 }
+
 .content-header .lnb nav p {
     display: inline-block;
     padding: 4px 16px;
@@ -38,22 +43,25 @@ article.content-header {
     border-radius: 30px;
     color: #878784;
 }
+
 .lnb nav p.on {
     background-color: #5B1A7C;
-    border: 1px solid #5B1A7C;;
+    border: 1px solid #5B1A7C;
+    ;
     color: #fff;
 }
+
 .lnb nav p:hover {
-    color:#5B1A7C;
+    color: #5B1A7C;
     background-color: #FBFAFF;
     border: 1px solid #5B1A7C;
 }
-.lnb nav p~p{
+
+.lnb nav p~p {
     margin-left: 24px;
 }
 
-section {
-}
+section {}
 
 section .section-top {
     font-size: 16px;
@@ -65,17 +73,21 @@ section .section-top {
 section .section-top .filter {
     float: right;
 }
+
 section .section-top .filter p span:last-child {
     margin-left: 16px;
 }
+
 .section-top .count {
     float: left;
 }
-.section-top .count span{
+
+.section-top .count span {
     font-size: 20px;
     font-weight: 500;
     color: #5B1A7C;
 }
+
 article.list {
     margin-bottom: 80px;
 }
@@ -92,8 +104,8 @@ article.list {
 }
 
 
-.list ul li:nth-child(4n){
-    margin-right:0;
+.list ul li:nth-child(4n) {
+    margin-right: 0;
 }
 
 ul li a .imgbox {
@@ -111,11 +123,13 @@ ul li a .imgbox img {
 ul li a .info {
     padding: 16px;
 }
-li a .info h3 {
-}
+
+li a .info h3 {}
+
 li a .info .tag {
     margin-bottom: 8px;
 }
+
 li a .info .tag p {
     display: inline-block;
     font-size: 14px;
@@ -125,12 +139,14 @@ li a .info .tag p {
 li a .info .price {
     font-size: 14px;
     font-weight: 600;
-    color:#d9d9d9;
+    color: #d9d9d9;
     text-decoration: line-through;
 }
+
 .info .total-price p {
     font-size: 18px;
 }
+
 .info .total-price span {
     color: #9747FF;
     font-weight: 600;
@@ -147,13 +163,14 @@ li a .info .review {
 li a .info .review span {
     margin-right: 8px;
     position: relative;
-    left:24px;
-    top:0;
+    left: 24px;
+    top: 0;
 }
 
 li a .info .review span img {
     width: 14px;
 }
+
 .btn-more {
     font-size: 14px;
     text-align: center;

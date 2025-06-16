@@ -4,6 +4,10 @@ body {
     width: 100%;
     margin-top: 130px;
     color: #333;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    overflow-x: hidden;
 }
 
 article.content-header {
@@ -21,7 +25,7 @@ article.content-header {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .content-header .lnb h2 {
@@ -29,8 +33,7 @@ article.content-header {
     margin-bottom: 75px;
 }
 
-.content-header .lnb nav {
-}
+.content-header .lnb nav {}
 
 .content-header .lnb nav p {
     display: inline-block;
@@ -90,14 +93,16 @@ section .section-top .filter p span:last-child {
 /* 리뷰 리스트 */
 article.review {
     margin-bottom: 80px;
-    
+
 }
-article.review .reviewwrap{
+
+article.review .reviewwrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    
+
 }
+
 .review ul li.review-box {
     /*   float: left;
     width: 32%; 
@@ -108,11 +113,11 @@ article.review .reviewwrap{
     border: 1px solid #eee;
     border-radius: 30px;
     box-sizing: border-box;
-   
+
 }
 
 ul li.review-box:nth-child(3n) {
-  /*   margin-right: 0; */
+    /*   margin-right: 0; */
 }
 
 ul .review-box .box-top {

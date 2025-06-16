@@ -31,7 +31,7 @@ $(document).ready(function () {
         }
     });
 
-    ////////////////////////////슬라이드/////////////////////////////////////////
+    //////////////////////////// 배너 슬라이드/////////////////////////////////////////
     var slidW = $('.banner-box').width();
     var page = 0;
     var total = $('.banner-box').length;
@@ -81,20 +81,38 @@ $(document).ready(function () {
         timer = setInterval(slide, 3000);
     });
 
-     /////////////custom/////////////////////////////////////////////////
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    /////////////custom/////////////////////////////////////////////////
+
+
+    $('.custom .content').css({
+        opacity: 0
+    });
+
+    $(window).on('scroll', function () {
+        var customImg = $('.custom .content-wrap').offset().top;
+        var scroll = $(window).scrollTop();
+        console.log(customImg, scroll);
+
+
+        if (scroll > customImg - 800) {
+            $('.custom .con1').fadeTo(2000, 1, function () {
+                $(this).next().fadeTo(2000, 1,function(){
+                    $(this).next().fadeTo(2000,1);
+                });
+            });
+        }
+    });
+
+
+
+
+
+
+
+
+
     /////영양제에 호버했을때///////////////////////////////////////////////
-     $('.pill .product').hover(
+    $('.pill .product').hover(
         function () {
 
             $(this).find('.des').show().css({
@@ -123,38 +141,45 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     var autocall;
-     var moveNum = 0;
-    
-    autocall= setInterval(flow,20);
+    var moveNum = 0;
+
+    autocall = setInterval(flow, 20);
+    ////////////////////호버///////////////////////////////////
+    $(".box-wrap .box").hover(
+        function () {
+            clearInterval(autocall);
+        },
+        function () {
+            autocall = setInterval(flow, 20);
+
+        }
+    );
+
+
     ////////////////////리뷰///////////////////////////////////
-    //넓이
-    function flow (){
+    function flow() {
 
         moveNum++; //left 이동값을 1씩 증가
-    
-        // (무한반복을 위해) 다음을 위한 준비!
-        // li 하나의 너비보다 이동한 left값(moveNum)이 커졌을 때 
-        // li 하나의 너비를 구하자!
-    
-        var boxWidth = $('.box-wrap .box').outerWidth();
-        console.log(boxWidth+'박스너비');
-    
+
+        var boxWidth = $('.box-wrap .box').outerWidth(true);
+        console.log(boxWidth + '박스너비');
+
         //if else 문
         if (moveNum > boxWidth) {
 
             $('.box-wrap').append($('.box-wrap .box').first()).css({
                 left: 0,
             });
-    
-            moveNum = 0;   
-    
+
+            moveNum = 0;
+
         } else {
             //moveNum의 값을 left 값으로 적용!
             $('.box-wrap').css({
                 left: -moveNum
             });
         }
-    
+
     }
 
 });
