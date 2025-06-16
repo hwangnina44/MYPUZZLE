@@ -78,7 +78,6 @@ section#mypuzzle {
     color: #fff;
     font-weight: 600;
     margin-bottom: 60px;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     display: none;
 }
 
@@ -123,12 +122,11 @@ section#mypuzzle {
 #analyze h2,
 #consult h2,
 #quality h2 {
-    font-size: 48px;
+    font-size: 60px;
     letter-spacing: 2px;
     color: #fff;
     font-weight: 600;
     margin-bottom: 60px;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     position: absolute;
     left: 20%;
     top: 30%;

@@ -27,8 +27,8 @@ function setDefaultGNB() {
 $(document).ready(function () {
 
     setTransparentGNB();
-    $('#mypuzzle h2').fadeIn(3000);
-    $('#mypuzzle p').delay(3000).fadeIn(3000);
+    $('#mypuzzle h2').fadeIn(2000);
+    $('#mypuzzle p').delay(2000).fadeIn(1000);
 
     
     $(document).on('mousewheel DOMMouseScroll', function () {
