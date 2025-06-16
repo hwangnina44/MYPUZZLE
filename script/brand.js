@@ -30,8 +30,6 @@ $(document).ready(function () {
     $('#mypuzzle h2').fadeIn(3000);
     $('#mypuzzle p').delay(3000).fadeIn(3000);
 
-
-
     
     $(document).on('mousewheel DOMMouseScroll', function () {
         if (stat === 1) return false;
@@ -56,7 +54,7 @@ $(document).ready(function () {
             }
         }
         var pageTop = $('.page').eq(pageCount).offset().top;
-        console.log('페이지 offset :' + pageTop);
+        //console.log('페이지 offset :' + pageTop);
 
         $('html,body').animate({
             scrollTop: pageTop + 'px'
@@ -67,5 +65,45 @@ $(document).ready(function () {
         
     });
 
-   
+
+    $('.side-pager li a').on ('click',function(e){
+        //a의 기능 막기
+        e.preventDefault();
+        //클릭된 메뉴와 현재 페이지 번호 일치 시키기!
+        //클릭 이후에 휠 이벤트가 발생할 경우, 현재 페이지를 기준으로 이동이하므로 실제 보여지는 페이지와 현재 페이지 번호를 일치 시켜주는 것이 필요!
+        var idx= $(this).parent().index();
+        console.log("클릭된 a 부모(li) index값:"+idx);
+        pageCount=idx;
+
+    
+        console.log("변경된페이지 번호:"+pageCount);
+        //스크롤 이동거리 구하기2 -pageCount
+        var pageTop= $('.page').eq(pageCount).offset().top;
+        //var pageTop= $('.page').eq(idx).offset().top;
+
+
+
+        //스크롤에 이동거리 구하기 1 - 클릭된 a 의  href값 활용하기
+/*         var pid = $(this).attr('href');
+        console.log(pid);
+        var pageTop = $(pid).offset().top; 
+        console.log('페이지가 문서로 부터 떨어진거리 : '+pageTop); */
+        //이동
+        $('html,body').animate({
+            scrollTop : pageTop
+        },800);
+       //메뉴변경
+       //menuChg();
+       menuChg (pageCount);
+    });
+
 });
+   
+
+
+//메뉴 변경 함수
+//함수명 : menuChg
+//기능 : .gnb와 .side-pager메뉴 동시 변경
+function menuChg (){
+    $(".side-pager li").eq(pageCount).addClass('on').siblings().removeClass('on');
+};

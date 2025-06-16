@@ -81,12 +81,24 @@ $(document).ready(function () {
         timer = setInterval(slide, 3000);
     });
 
-     /////영양제에 호버했을때///////////////////////////////////////////////
+     /////////////custom/////////////////////////////////////////////////
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /////영양제에 호버했을때///////////////////////////////////////////////
      $('.pill .product').hover(
         function () {
 
             $(this).find('.des').show().css({
-                backgroundColor: 'rgba(151,71,255, 0.6)'
+                backgroundColor: 'rgba(0,0,0, 0.3)'
             });
             $(this).find('.info').hide();
             $(this).find('.pill-img').css({
@@ -110,35 +122,38 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-
+    var autocall;
+     var moveNum = 0;
+    
+    autocall= setInterval(flow,20);
     ////////////////////리뷰///////////////////////////////////
     //넓이
-    var reviewW = ($(".review .slider .box-wrap").width());
-    var box = $(".review .slider .box-wrap .box").width();
-    console.log(reviewW, box);
-    //실행
-    //a 복사
-    var content = $('.review .slider .box-wrap').clone().appendTo('.review .slider').css({
-        float: 'left'
-    });
+    function flow (){
 
-    //console.log(content);
-    // setInterval(move,3000)
-    move();
+        moveNum++; //left 이동값을 1씩 증가
+    
+        // (무한반복을 위해) 다음을 위한 준비!
+        // li 하나의 너비보다 이동한 left값(moveNum)이 커졌을 때 
+        // li 하나의 너비를 구하자!
+    
+        var boxWidth = $('.box-wrap .box').first().outerWidth();
+    
+        //if else 문
+        if (moveNum > boxWidth) {
 
-    function move() {
-
-        $('.review .slider .box-wrap').animate({
-            marginLeft: "-=" + reviewW
-        }, 50000, function () {
-            $('.review .slider .box-wrap').css({
-                marginLeft: 0
+            $('.box-wrap').append($('.box-wrap .box').first()).css({
+                left: 0
             });
-        });
-        $('.review .slider .box-wrap box').clone().appendTo('.review .slider .box-wrap').css({
-            float: 'left'
-        });
+    
+            moveNum = 0;   
+    
+        } else {
+            //moveNum의 값을 left 값으로 적용!
+            $('.box-wrap').css({
+                left: -moveNum
+            });
+        }
+    
     }
-
 
 });

@@ -83,7 +83,7 @@ section .section-top .filter p span:last-child {
 }
 
 .section-top .count span {
-    font-size: 20px;t
+    font-size: 20px;
     font-weight: 600;
     color: #5B1A7C;
 }
@@ -130,22 +130,23 @@ ul .review-box .box-top {
 }
 
 .review-box .box-top p.count {
-    padding: 4px 8px;
-    background-color: #5B1A7C;
-    color: #fff;
-    border-radius: 15px;
     font-size: 14px;
+    padding: 2px 8px;
+    border: 1px solid #26A6CC;
+    border-radius: 100px;
+    color: #26A6CC;
+    font-weight: 600;
     margin-right: 10px;
-    font-weight: 200;
 }
 
 .review-box .box-top p.purchased {
     padding: 4px 8px;
-    background-color: #E81D75;
-    color: #fff;
+    color: #E81D75;
+    border: 1px solid #E81D75;
     border-radius: 15px;
     font-size: 14px;
     margin-right: 10px;
+    font-weight: 600;
 
 }
 
@@ -155,12 +156,12 @@ ul .review-box .box-top {
     top: 0;
 }
 
-.review-box .box-top p span.count {
+/* .review-box .box-top p span.count {
     padding: 2px 6px;
     background-color: #5B1A7C;
     color: #fff;
     margin-right: 16px;
-}
+} */
 
 .review-box .text {}
 

@@ -5,49 +5,53 @@ footer {
     background-color: #1B032D;
     color: rgba(255, 255, 255, 0.8);
     max-width: 1920px;
+    padding: 40px 0 60px;
 }
-
-footer  {}
 footer .footer-top {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    outline: 1px solid #fff;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 24px;
 }
 
 footer .footer-top .footer-logo {
+    height: 32px;
+    float: left;
 }
 
 .footer-top .footer-logo img {
+    height: 100%;
     display: block;
 }
 
-footer .footer-top ul {
+footer .footer-top .info {
+    float: right;
 }
 
-.footer-top ul li {
+.footer-top .info p {
     font-size: 12px;
+    margin: 0 4px;
+    display: inline-block;
 }
-.footer-top ul li a {
+.footer-top .info p a {
     color: rgba(255, 255, 255, 0.8);
 }
-.footer-top ul li~li {
+
+footer .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-
-.footer .copyright {
-
-    height: 200px;
-}
-
-.footer .copyright .info {
-    margin: 20px 0;
+footer .copyright .info {
+    margin: 24px 0;
     font-size: 12px;
+}
+
+.copyright .info p {
+    margin-bottom: 8px;
 }
 
 .copyright .info p:first-child {
-    margin-bottom: 10px;
     font-weight: 500;
 }
 
@@ -85,14 +89,14 @@ footer .footer-top .call {
 
 .call .callcenter p {
     display: inline-block;
-    font-weight: 500;
+    font-weight: 600;
+    color: #fff;
+    font-size: 24px;
 }
 
-.call .callcenter p a {
+.call .callcenter a.btn {
     color: rgba(255, 255, 255, 0.8);
-}
-.call .callcenter p:last-child {
-    font-size: 18px;
+    display: block;
 }
 
 .call .time {
@@ -103,10 +107,13 @@ footer .footer-top .call {
 }
 .call .sns-btn {
     height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
    
 }
 .call .sns-btn a {
-    display: inline-block;
+
     width: 32px;
     height: 32px;
 }

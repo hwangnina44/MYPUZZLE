@@ -113,8 +113,10 @@ ul li a .imgbox img {
 ul li a .info {
     padding: 16px;
 }
+li a .info h3 {
+}
 li a .info .tag {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 li a .info .tag p {
     display: inline-block;
@@ -122,20 +124,19 @@ li a .info .tag p {
     color: #878484;
 }
 
-li a .info .tag span {
-    color: #5B1A7C;
-}
-
-li a .info h3 {
-    font-weight: 500;
-
-}
-
 li a .info .price {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
-    color:#E81D75;
-    margin-bottom: 4px;
+    color:#d9d9d9;
+    text-decoration: line-through;
+}
+.info .total-price p {
+    font-size: 18px;
+}
+.info .total-price span {
+    color: #9747FF;
+    font-weight: 600;
+    margin-right: 8px;
 }
 
 li a .info .review {
