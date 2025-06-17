@@ -149,3 +149,50 @@ section#mypuzzle {
     font-size: 24px;
     margin-bottom: 20px;
 }
+
+.btn-more {
+    border-radius: 100px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15%;
+    z-index: 98;
+}
+
+.btn-more a {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 50px;
+    color: #fff;
+
+
+    background-image: url(../../img/icon/scroll1.png);
+    background-repeat: no-repeat;
+    background-position: center 14px;
+
+
+
+
+    position: absolute;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+@keyframes move {
+    0% {
+        left: 50%;
+        top: 5px;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        left: 50%;
+        top: 20px;
+    }
+}
+

@@ -100,7 +100,7 @@ $(document).ready(function () {
                     $(this).next().fadeTo(1000,1);
                 });
             });
-        }else{}
+        }
     });
 
 
