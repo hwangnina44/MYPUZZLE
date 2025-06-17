@@ -31,7 +31,7 @@ article.content-header {
 .content-header .lnb nav {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -63px;
     transform: translateX(-50%);
 }
 .content-header .lnb nav p {
@@ -55,7 +55,7 @@ article.content-header {
 }
 
 .lnb nav p~p{
-    margin-left: 24px;
+    margin-left: 8px;
 }
 
 
@@ -63,7 +63,7 @@ section .section-top {
     font-size: 16px;
     color: #878484;
     font-weight: 500;
-    padding: 40px 0;
+    padding: 120px 0 40px;
 }
 
 section .section-top .filter {

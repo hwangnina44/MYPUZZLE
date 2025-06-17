@@ -21,7 +21,7 @@ article.content-header {
 
 }
 
-.content-header .lnb h2 {
+.content-header h2 {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -29,14 +29,14 @@ article.content-header {
     font-size: 40px;
 }
 
-.content-header .lnb nav {
+.content-header .lnb {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -63px;
     transform: translateX(-50%);
 }
 
-.content-header .lnb nav p {
+.content-header .lnb p {
     display: inline-block;
     padding: 4px 16px;
     font-size: 16px;
@@ -46,17 +46,17 @@ article.content-header {
     cursor: pointer;
 }
 
-.lnb nav p~p {
-    margin-left: 24px;
+nav.lnb p~p {
+    margin-left: 8px;
 }
 
-.lnb nav p.on {
+.lnb p.on {
     background-color: #5B1A7C;
     border: 1px solid #5B1A7C;
     color: #fff;
 }
 
-.lnb nav p:hover {
+.lnb p:hover {
     color: #5B1A7C;
     background-color: #FBFAFF;
     border: 1px solid #5B1A7C;
@@ -68,7 +68,7 @@ section .section-top {
     font-size: 16px;
     color: #878484;
     font-weight: 500;
-    padding: 40px 0;
+    padding: 120px 0 40px;
     text-align: right;
 }
 
