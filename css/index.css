@@ -82,6 +82,7 @@ article.slide {
 }
 
 .slide .title .btn {
+    display: inline-block;
     font-size: 14px;
     padding: 8px 24px;
     color: #fff;

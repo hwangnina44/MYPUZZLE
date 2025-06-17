@@ -1,23 +1,17 @@
 @charset "utf-8";
 body{
-    font-family: 'S-Core Dream 4 ';
+    font-family: "Noto Sans KR", sans-serif;
     font-weight: 400;
-    color: #333;
     font-size: 16px;
-    
-    /*    color: rgb(153, 153, 153);
-
-    background-color: rgb(247, 247, 247)
-background-color: #F7F7F7;
-    padding: 10px 20px;
-    border-radius: 22px;
-
-    font-size: 14px;;
-        color: #333;
-    
-    */
+    color: #333;
 }
 .inner {
     width: 1280px;
     margin: 0 auto;
 }
+
+header .gnb ul li a.active{
+    color: #3C1152;
+    font-weight: 700;
+}
+

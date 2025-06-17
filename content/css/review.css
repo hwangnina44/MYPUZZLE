@@ -3,10 +3,6 @@
 body {
     width: 100%;
     margin-top: 130px;
-    color: #333;
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
     overflow-x: hidden;
 }
 
@@ -18,22 +14,29 @@ article.content-header {
     background-image: url(../img/bg_banner2.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #FBFAFF
+    background-size: auto 320px;
+    background-color: #FBFAFF;
+    position: relative;
 }
 
 .content-header .lnb {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+
 }
 
 .content-header .lnb h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     font-size: 40px;
-    margin-bottom: 75px;
 }
 
-.content-header .lnb nav {}
+.content-header .lnb nav {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
 
 .content-header .lnb nav p {
     display: inline-block;

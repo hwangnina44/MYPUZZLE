@@ -1,14 +1,13 @@
 @charset "utf-8";
 
 body {
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
     overflow-x: hidden;
 }
+
 section {
     margin-bottom: 160px;
 }
+
 article.banner {
     width: 100%;
     height: 850px;
@@ -26,12 +25,12 @@ article.banner {
 }
 
 .banner .title h2 {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 40px;
 }
 
 .banner .title p {
-    font-size: 18px;
+    font-size: 24px;
 
     margin-bottom: 50px;
 }
@@ -67,13 +66,13 @@ article.custom {
 
 .custom .title {
     margin-bottom: 80px;
-    
+
 }
 
 .custom .title .step {
     color: rgba(247, 247, 247, 0.8);
     position: absolute;
-    left: 0;
+    left: 2%;
     top: -82px;
     font-size: 200px;
     font-weight: 900;
@@ -82,12 +81,13 @@ article.custom {
 .custom .title h2 {
     position: relative;
     z-index: 99;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     margin-bottom: 60px;
 }
 
 .custom .title p {
+    font-size: 24px;
     color: #595959;
 }
 
@@ -97,7 +97,7 @@ article.custom {
     justify-content: space-between;
     margin-bottom: 80px;
     position: relative;
-    
+
 }
 
 .step .stepbox2 {
@@ -112,52 +112,58 @@ article.custom {
 }
 
 .step .stepbox .step-des h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 24px;
 }
 
 .stepbox .step-des p {
-    color: 595959;
+    font-size: 18px;
+    line-height: 30px;
+    color: #595959;
 }
 
-.stepbox .step-des .step-num {
+.stepbox1 .step-des .step-num,
+.stepbox3 .step-des .step-num {
     font-size: 160px;
     font-weight: 700;
     color: rgba(247, 247, 247, 0.8);
     position: absolute;
-    right:20%;
-    bottom: -44px;
+    right: 20%;
+    bottom: 47px;
 }
-.stepbox2 .step-des .step-num{
+.stepbox2 .step-des .step-num {
+    font-size: 160px;
+    font-weight: 700;
+    color: rgba(247, 247, 247, 0.8);
     position: absolute;
-    left:20%;
-    bottom: -44px;
+    left: 15%;
+    bottom: 47px;
 }
 
 .stepbox .img-box {
-    width: 45%;
-    margin-right: 5%;
+    width: 50%;
+    height: 100%;
     overflow: hidden;
     box-sizing: border-box;
 }
-.stepbox2 .img-box {
-    margin-right: 0;
-    margin-left: 5%;
-}
+
 .stepbox .imgbox1 {
     position: relative;
     left: -300px;
     opacity: 0;
     transition: all 3s;
 }
+
 .stepbox .imgbox2 {
     position: relative;
     left: 300px;
     opacity: 0;
     transition: all 3s;
-}.stepbox .imgbox3 {
+}
+
+.stepbox .imgbox3 {
     position: relative;
     left: -300px;
     opacity: 0;
@@ -165,7 +171,7 @@ article.custom {
 }
 
 .stepbox .img-box img {
-    width: 100%;
+    height: 100%;
     display: block;
 }
 

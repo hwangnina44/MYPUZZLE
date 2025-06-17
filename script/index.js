@@ -83,7 +83,7 @@ $(document).ready(function () {
 
     /////////////custom/////////////////////////////////////////////////
 
-
+    ////
     $('.custom .content').css({
         opacity: 0
     });
@@ -95,12 +95,12 @@ $(document).ready(function () {
 
 
         if (scroll > customImg - 800) {
-            $('.custom .con1').fadeTo(2000, 1, function () {
-                $(this).next().fadeTo(2000, 1,function(){
-                    $(this).next().fadeTo(2000,1);
+            $('.custom .con1').fadeTo(1000, 1, function () {
+                $(this).next().fadeTo(1000, 1,function(){
+                    $(this).next().fadeTo(1000,1);
                 });
             });
-        }
+        }else{}
     });
 
 

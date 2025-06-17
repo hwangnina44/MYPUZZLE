@@ -1,11 +1,8 @@
 @charset "utf-8";
 
 body {
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
     width: 100%;
-    margin-top: 150px;
+    margin-top: 130px;
 }
 
 article.content-header {
@@ -13,25 +10,29 @@ article.content-header {
     height: 320px;
     background-image: url(../img/bg_banner2.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: auto 320px;
+    background-position:top;
     text-align: center;
     position: relative;    
 }
 
 .content-header .lnb {
+
+}
+
+.content-header .lnb h2 {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-}
-
-.content-header .lnb h2 {
     font-size: 40px;
-    margin-bottom: 80px;
 }
 
 .content-header .lnb nav {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
 }
 .content-header .lnb nav p {
     display: inline-block;

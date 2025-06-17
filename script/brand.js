@@ -7,6 +7,7 @@ var stat = 0; //스크롤 상태 변경(0-실행전/허용, 1-실행중/잠금)
 //상단바 함수//////////////////////////////////////////////////////////
 function setTransparentGNB() {
     $('header').addClass('transparent');
+    //여기에 추가
     $('header').removeClass('bar-active');
     $('.logo img').attr('src', '../img/Logo_w.png');
     $('.login .icon-login img').attr('src', '../img/icon/icon_login_w.png');

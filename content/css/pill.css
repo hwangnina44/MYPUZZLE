@@ -3,10 +3,6 @@
 body {
     width: 100%;
     margin-top: 130px;
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-
 }
 
 article.content-header {
@@ -14,7 +10,8 @@ article.content-header {
     height: 320px;
     background-image: url(../img/bg_banner2.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center top;
+    background-size: auto 320px;
     /* background-position: center; */
     text-align: center;
     position: relative;
