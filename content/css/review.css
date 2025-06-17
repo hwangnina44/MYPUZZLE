@@ -9,13 +9,11 @@ body {
 article.content-header {
     width: 100%;
     height: 320px;
-    text-align: center;
-    position: relative;
     background-image: url(../img/bg_banner2.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     background-size: auto 320px;
-    background-color: #FBFAFF;
+    text-align: center;
     position: relative;
 }
 

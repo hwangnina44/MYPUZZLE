@@ -63,6 +63,7 @@ $(document).ready(function () {
             $('.page').eq(pageCount).find('.des').fadeIn();
             stat = 0;
         });
+        menuChg(pageCount);
         
     });
 
@@ -106,5 +107,6 @@ $(document).ready(function () {
 //함수명 : menuChg
 //기능 : .gnb와 .side-pager메뉴 동시 변경
 function menuChg (){
-    $(".side-pager li").eq(pageCount).addClass('on').siblings().removeClass('on');
-};
+
+    $('.side-pager li').eq(pageCount).addClass('on').siblings().removeClass('on');
+}

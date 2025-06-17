@@ -169,7 +169,46 @@ li a .info .review span img {
 }
 
 .btn-more {
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 80px;
+  width: 40px;
+  height: 60px;
+  border-radius: 100px;
+  background-color: rgba(200, 200, 200, 0.2);
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 34px;
+}
+
+.btn-more a {
+    display: block;
+    font-size: 0;
+   
+    
+    width: 20px;
+    height: 35px;
+    border-radius: 10px;
+    background: url(../../img/icon/scroll1.png) no-repeat top center;
+    
+
+    position: absolute;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+@keyframes move {
+    0% {
+        left: 50%;
+        top: 5px;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        left: 50%;
+        top: 20px;
+    }
 }

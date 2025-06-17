@@ -10,9 +10,8 @@ section {
     background-image: url(../img/bg_banner2.png);
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: cover;
+    background-size:cover;
     padding: 120px 0 160px;
-    z-index: 0;
     overflow: hidden;
 }
 
