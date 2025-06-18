@@ -81,6 +81,8 @@ $(document).ready(function () {
         timer = setInterval(slide, 3000);
     });
 
+    
+
     /////////////custom/////////////////////////////////////////////////
 
     ////

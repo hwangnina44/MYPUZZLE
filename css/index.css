@@ -4,11 +4,11 @@ body {
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    width: 100%;
 }
 
 section {
     width: 100%;
-    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -23,18 +23,19 @@ article.slide {
     margin-bottom: 80px;
     position: relative;
     overflow: hidden;
+    
 }
 
 .slide .banner {
     display: flex;
-    flex-direction: "row";
+    flex-direction: row;
     width: 300%;
 
 }
 
 .banner .banner-box {
     height: 850px;
-    width: 100%;
+    width: 33.33%;
 }
 
 .banner .banner-box .dim {
@@ -52,6 +53,7 @@ article.slide {
     background-image: url(../img/banner2-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    outline: 5px solid red;
 }
 
 .banner .box1 {
