@@ -12,6 +12,10 @@ section {
     margin: 0 auto;
 }
 
+h2 span {
+    font-family: "Montserrat", sans-serif;
+}
+
 /* 배너 */
 article.slide {
     width: 100%;
@@ -134,6 +138,7 @@ article.custom {
 .custom .title h2 span {
     color: #8121DD;
     font-size: 18px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .custom .title p {

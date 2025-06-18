@@ -17,30 +17,26 @@ $(function () {
 
 
 $(document).ready(function () {
+    // 초기 설정: 처음 4개만 보이기
+    $('.list li').hide().slice(0, 4).show();
 
-    //초기설정
-    $('.list li').hide();
-    $('.list li').slice(0, 4).show();
+    let index = 4; // 다음에 보여줄 li의 시작 인덱스
+    let isLoading = false;
 
-    //slice(start, end) : 시작 인덱스부터 종료 인덱스 이전까지!
-    //slice(0,4) : 인덱스 0번부터 4번 이전까지! >> 0,1,2,3
+    $(window).on('scroll', function () {
+        // 스크롤이 화면 하단 근처에 도달했을 때만 동작
+        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 300) {
+            if (isLoading) return; // 중복 방지
 
+            isLoading = true;
 
+            const hiddenItems = $('.list li:hidden');
 
-    $('.btn-more a').on('click', function (evt) {
-
-        evt.preventDefault();
-
-        var hiddenBox = $('li:hidden').length;
-        console.log('숨겨진 box 갯수: ' + hiddenBox); //12
-
-        if (hiddenBox >= 0) {
-            $('li:hidden').slice(0, 4).slideDown();
-        } else
+            if (hiddenItems.length > 0) {
+                hiddenItems.slice(0, 4).slideDown(800, function () {
+                    isLoading = false;
+                });
+            } 
+        }
     });
-   
-
-
-
 });
-

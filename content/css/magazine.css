@@ -28,8 +28,15 @@ article.content-header {
     transform: translate(-50%,-50%);
     font-size: 48px;
     font-weight: 700;
-    color:#3C1152
+    text-align: center;
+    
 }
+.content-header h2 span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color:#8121DD;
+}
+
 
 .content-header .lnb nav {
     position: absolute;

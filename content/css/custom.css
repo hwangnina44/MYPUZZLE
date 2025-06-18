@@ -76,6 +76,7 @@ article.custom {
     top: -82px;
     font-size: 200px;
     font-weight: 900;
+    font-family: "Montserrat", sans-serif;
 }
 
 .custom .title h2 {
@@ -132,6 +133,7 @@ article.custom {
     position: absolute;
     right: 20%;
     bottom: 47px;
+    font-family: "Montserrat", sans-serif;
 }
 .stepbox2 .step-des .step-num {
     font-size: 160px;
@@ -140,6 +142,7 @@ article.custom {
     position: absolute;
     left: 15%;
     bottom: 47px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .stepbox .img-box {

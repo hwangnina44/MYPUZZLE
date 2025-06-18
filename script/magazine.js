@@ -43,6 +43,8 @@ $(function(){
        $('.list li').show();
     });
 });
+
+
 $(document).ready(function () {
     // 초기 설정: 처음 4개만 보이기
     $('.list li').hide().slice(0, 3).show();

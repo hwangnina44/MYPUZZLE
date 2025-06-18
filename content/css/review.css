@@ -22,13 +22,19 @@ article.content-header {
 }
 
 .content-header h2 {
+    font-family: "Montserrat", sans-serif;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     font-size: 40px;
+    font-weight: 700;
 }
-
+.content-header h2 span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #8121DD;
+}
 .content-header .lnb {
     position: absolute;
     left: 50%;

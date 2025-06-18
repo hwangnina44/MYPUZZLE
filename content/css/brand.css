@@ -28,6 +28,10 @@ nav ul.side-pager li {
     position: relative;
     float: none;
     cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+nav ul.side-pager li a {
+    font-family: "Montserrat", sans-serif;
 }
 
 nav ul.side-pager li::after {
@@ -82,7 +86,6 @@ section#mypuzzle {
     font-size: 18px;
     line-height: 24px;
     color: #fff;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     display: none;
 }
 
@@ -119,10 +122,11 @@ section#mypuzzle {
 #analyze h2,
 #consult h2,
 #quality h2 {
-    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;
     letter-spacing: 2px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 60px;
     position: absolute;
     left: 20%;

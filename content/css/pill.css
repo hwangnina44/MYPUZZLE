@@ -26,6 +26,13 @@ article.content-header {
 
 .content-header .lnb h2 {
     font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+.content-header h2 span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #8121DD;
 }
 
 .content-header .lnb nav {

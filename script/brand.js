@@ -64,7 +64,10 @@ $(document).ready(function () {
             stat = 0;
         });
         menuChg(pageCount);
-        
+
+        if(pageCount==4){
+            $(".btn-more").hide();
+        }
     });
 
 
@@ -107,6 +110,5 @@ $(document).ready(function () {
 //함수명 : menuChg
 //기능 : .gnb와 .side-pager메뉴 동시 변경
 function menuChg (){
-
     $('.side-pager li').eq(pageCount).addClass('on').siblings().removeClass('on');
 }
