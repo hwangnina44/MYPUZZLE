@@ -61,6 +61,7 @@ nav ul.side-pager li.on::after {
     top: 15px;
 }
 
+/* section */
 section#mypuzzle {
     width: 100%;
     height: 100%;
@@ -86,7 +87,7 @@ section#mypuzzle {
 }
 
 #mypuzzle .title p {
-    font-size: 26px;
+    font-size: 24px;
     color: #fff;
     display: none;
 }
@@ -97,9 +98,23 @@ section.page {
     width: 100%;
     height: 100%;
 }
+
 #analyze {
-    display:flex;
+    display: flex;
     flex-direction: row;
+    position: relative;
+}
+
+#analyze::before {
+    content: "";
+    width: 55%;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    z-index: 1;
 }
 
 section.page .img-box {
@@ -107,16 +122,17 @@ section.page .img-box {
     height: 100%;
     overflow: hidden;
 }
+
 section.page .img-box img {
     height: 100%;
     display: block;
 }
+
 section.page .des-box {
-    width:50%;
-    height:100%;
+    width: 50%;
+    height: 100%;
     background-color: #9747FF;
 }
-
 
 #analyze .des-box {
     position: relative;
@@ -124,7 +140,7 @@ section.page .des-box {
 
 #analyze .des-box .subtitle {
     position: absolute;
-    left: 10%;
+    left: 20%;
     top: 20%;
 }
 
@@ -135,8 +151,20 @@ section.page .des-box {
 }
 
 #consult {
-    display:flex;
+    display: flex;
     flex-direction: row-reverse;
+    position: relative;
+}
+#consult::before {
+    content: "";
+    width: 55%;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    z-index: 1;
 }
 
 #consult .des-box {
@@ -145,7 +173,7 @@ section.page .des-box {
 
 #consult .des-box .subtitle {
     position: absolute;
-    right:10%;
+    right: 20%;
     top: 20%;
 }
 
@@ -157,10 +185,9 @@ section.page .des-box {
 }
 
 #quality {
-    width: 100%;
-    height: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 #quality .img-box {
@@ -168,14 +195,27 @@ section.page .des-box {
     height: 50%;
     overflow: hidden;
 }
+
 #quality .img-box img {
     width: 100%;
     display: block;
 }
+
 #quality .des-box {
-    width:100%;
-    height:50%;
+    width: 100%;
+    height: 50%;
     background-color: #9747FF;
+}
+#quality .des-box::before {
+    content: "";
+    width: 20%;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 32%;
+    z-index: 3;
 }
 
 #quality .des-box {
@@ -184,7 +224,7 @@ section.page .des-box {
 
 #quality .des-box .subtitle {
     position: absolute;
-    left:20%;
+    left: 25%;
     top: 20%;
 }
 
@@ -216,6 +256,7 @@ section.page .des-box {
     margin-bottom: 20px;
 }
 
+/* 버튼 */
 .btn-more {
     border-radius: 100px;
     position: fixed;
