@@ -91,108 +91,126 @@ section#mypuzzle {
     display: none;
 }
 
-
-#analyze {
-    width: 100%;
-    height: 100%;
-    background: url(../img/brand_list1.jpg) no-repeat center left /50% 100%;
-    position: relative;
-}
-
-#analyze .title {
-    float: right;
-}
-
-#analyze .title,
-#consult .title,
-#quality .title {
-    width: 50%;
-    height: 100%;
-    background-color: #9747FF;
-    position: relative;
-}
-
-#analyze .title .subtitle {
-    position: relative;
-    left: 0%;
-    top: 20%;
-    padding-left: 120px;
-    box-sizing: border-box;
-}
-
-#analyze .title .des {
-    width: 100%;
-    padding: 50px;
-    box-sizing: border-box;
-    position: absolute;
-    left: 0;
-    bottom: 10%;
-}
-
-#consult {
-    width: 100%;
-    height: 100%;
-    background: url(../img/brand_list2.jpg) no-repeat center right /50% 100%;;
-    position: relative;
-}
-
-#consult .title .subtitle {
-    position: relative;
-    left: 0;
-    top: 20%;
-    outline: 1px solid red;
-    text-align: right;
-    padding-right: 120px;
-}
-#consult .title {
-}
-#consult .title .des {
-    text-align: right;
-    width: 100%;
-    padding: 50px;
-    box-sizing: border-box;
-    position: absolute;
-    right: 0;
-    bottom: 10%;
-
-}
+/* section */
 
 section.page {
     width: 100%;
     height: 100%;
+}
+#analyze {
+    display:flex;
+    flex-direction: row;
+}
 
+section.page .img-box {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+section.page .img-box img {
+    height: 100%;
+    display: block;
+}
+section.page .des-box {
+    width:50%;
+    height:100%;
+    background-color: #9747FF;
 }
 
 
-#analyze h2,
-#consult h2,
-#quality h2 {
+#analyze .des-box {
+    position: relative;
+}
+
+#analyze .des-box .subtitle {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+
+#analyze .des-box .des {
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+}
+
+#consult {
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+#consult .des-box {
+    position: relative;
+}
+
+#consult .des-box .subtitle {
+    position: absolute;
+    right:10%;
+    top: 20%;
+}
+
+#consult .des-box .des {
+    text-align: right;
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+}
+
+#quality {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+#quality .img-box {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+#quality .img-box img {
+    width: 100%;
+    display: block;
+}
+#quality .des-box {
+    width:100%;
+    height:50%;
+    background-color: #9747FF;
+}
+
+#quality .des-box {
+    position: relative;
+}
+
+#quality .des-box .subtitle {
+    position: absolute;
+    left:20%;
+    top: 20%;
+}
+
+#quality .des-box .des {
+    position: absolute;
+    left: 55%;
+    bottom: 10%;
+}
+
+.page .des-box .subtitle {
     font-family: "Montserrat", sans-serif;
     font-size: 80px;
     letter-spacing: 2px;
     color: #fff;
     font-weight: 700;
     margin-bottom: 60px;
-    /* position: absolute;
-    left: 20%;
-    top: 30%; */
 }
 
-#analyze .des,
-#consult .des,
-#quality .des {
+.page .des-box .des {
     font-size: 18px;
     line-height: 28px;
     color: #fff;
-    /*     position: absolute;
-    right: 10%;
-    bottom: 20%;
-    display: none; */
+
 }
 
-#analyze .des h3,
-#consult .des h3,
-#quality .des h3 {
+.page .des-box .des h3 {
     font-weight: 500;
     font-size: 24px;
     margin-bottom: 20px;
@@ -213,13 +231,9 @@ section.page {
     padding-top: 50px;
     color: #fff;
 
-
     background-image: url(../../img/icon/scroll1.png);
     background-repeat: no-repeat;
     background-position: center 14px;
-
-
-
 
     position: absolute;
     animation-name: move;
@@ -227,7 +241,6 @@ section.page {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
 
 
 @keyframes move {
