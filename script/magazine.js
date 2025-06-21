@@ -48,8 +48,6 @@ $(function(){
 $(document).ready(function () {
     // 초기 설정: 처음 4개만 보이기
     $('.list li').hide().slice(0, 3).show();
-
-    let index = 4; // 다음에 보여줄 li의 시작 인덱스
     let isLoading = false;
 
     $(window).on('scroll', function () {
@@ -65,7 +63,11 @@ $(document).ready(function () {
                 hiddenItems.slice(0, 3).slideDown(800, function () {
                     isLoading = false;
                 });
+                
             } 
+             if ($('.list li:hidden').length === 0){
+               $('.btn-more').fadeOut();  
+             }
         }
     });
 });

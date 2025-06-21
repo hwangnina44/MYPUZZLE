@@ -91,15 +91,22 @@ footer .footer-top .call {
 
 .call .callcenter p {
     display: inline-block;
-    font-weight: 600;
+    font-weight:700;
     color: #fff;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .call .callcenter a.btn {
     color: rgba(255, 255, 255, 0.8);
     display: block;
+    font-weight: 600;
+    background-image: url(../img/icon/more_w.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: transparent;
+    cursor: pointer;
 }
+
 
 .call .time {
     margin-bottom: 20px;
@@ -115,7 +122,6 @@ footer .footer-top .call {
    
 }
 .call .sns-btn a {
-
     width: 32px;
     height: 32px;
 }

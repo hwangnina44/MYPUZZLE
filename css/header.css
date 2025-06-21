@@ -24,11 +24,11 @@ header .top .logo {
     height: 32px;
     margin-bottom: 32px;
 }
-
-header .top .logo a.active {
-    color: #5B1A7C;
-    font-weight: 600;
+header .top .logo a {
+    display: block;
+    height: 32px;
 }
+
 
 header .top .logo a img {
     height: 100%;
@@ -47,13 +47,14 @@ header .top .gnb ul li {
 header .top .login {
     position: absolute;
     right: 0;
-    top: -10px;
+    top:0px;
+    
 }
 
 header .top .login .icon-btn {
     display: inline-block;
     padding: 0 8px;
-    height: 24px;
+    height: 28px;
     vertical-align: middle;
 }
 
@@ -63,6 +64,7 @@ header .top .login .icon-btn img {
 }
 
 header .top .login .btn {
+    line-height: 28px;
     display: inline-block;
     color: #782D9E;
     border:1px solid #782D9E;
@@ -70,6 +72,7 @@ header .top .login .btn {
     padding: 6px 12px;
     border-radius: 30px;
     font-size: 14px;
+    margin-left: 8px;
 }
 
 header .top .login .btn:hover {
@@ -93,6 +96,7 @@ header.bar-active .top {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    background-color: #3C1152;
 }
 
 header.bar-active .top .logo {
@@ -100,27 +104,23 @@ header.bar-active .top .logo {
     margin-bottom: 32px;
     position: absolute;
     left: 0;
-    top: -7px;
+    top: 0;
 }
 
-header.bar-active .login .btn {
-    display: inline-block;
-    color: #782D9E;
-    border:1px solid #782D9E;
-   /*  background-image: linear-gradient(to bottom right, #9550b8, #782c9e, #5B1A7C); */
-    padding: 6px 12px;
-    border-radius: 30px;
-    font-size: 14px;
-}
+
 
 header.bar-active .top .gnb {
-    display: inline-block;
+    position: absolute;
+    left:50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    outline: 1px solid red;
 }
 
 header.bar-active .top .gnb ul li {
     float: none;
     display: inline-block;
-    padding: 0 24px;
+    padding: 0 12px;
 }
 
 header.bar-active .gnb ul li a:hover {
@@ -131,9 +131,6 @@ header.bar-active .top .login {
     display: inline-block;
 }
 
-header.bar-active .top .login .icon-btn {
-    display: none;
-}
 
 /* 메인 css */
 header.transparent {

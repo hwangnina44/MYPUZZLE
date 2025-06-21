@@ -1,5 +1,9 @@
 //pill.js
 $(function () {
+    
+    $('nav p').click(function () {
+        $(this).addClass('on').siblings().removeClass('on');
+    });
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 100) {
@@ -7,20 +11,15 @@ $(function () {
         } else {
             $('header').removeClass('bar-active');
         }
-    });
-
-    $('nav p').click(function () {
-        $(this).addClass('on').siblings().removeClass('on');
-    });
+    }
+    );
 });
 
 
 
 $(document).ready(function () {
     // 초기 설정: 처음 4개만 보이기
-    $('.list li').hide().slice(0, 4).show();
-
-    let index = 4; // 다음에 보여줄 li의 시작 인덱스
+    $('.list ul li').hide().slice(0, 4).show();
     let isLoading = false;
 
     $(window).on('scroll', function () {
@@ -30,13 +29,17 @@ $(document).ready(function () {
 
             isLoading = true;
 
-            const hiddenItems = $('.list li:hidden');
+            const hiddenItems = $('.list ul li:hidden');
 
             if (hiddenItems.length > 0) {
                 hiddenItems.slice(0, 4).slideDown(800, function () {
                     isLoading = false;
                 });
-            } 
+
+            }
+            if ($('.list ul li:hidden').length === 0) {
+                $('.btn-more').fadeOut();
+            }
         }
     });
 });
