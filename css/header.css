@@ -24,6 +24,7 @@ header .top .logo {
     height: 32px;
     margin-bottom: 32px;
 }
+
 header .top .logo a {
     display: block;
     height: 32px;
@@ -47,8 +48,8 @@ header .top .gnb ul li {
 header .top .login {
     position: absolute;
     right: 0;
-    top:0px;
-    
+    top: 0px;
+
 }
 
 header .top .login .icon-btn {
@@ -67,8 +68,8 @@ header .top .login .btn {
     line-height: 28px;
     display: inline-block;
     color: #782D9E;
-    border:1px solid #782D9E;
-   /*  background-image: linear-gradient(to bottom right, #9550b8, #782c9e, #5B1A7C); */
+    border: 1px solid #782D9E;
+    /*  background-image: linear-gradient(to bottom right, #9550b8, #782c9e, #5B1A7C); */
     padding: 6px 12px;
     border-radius: 30px;
     font-size: 14px;
@@ -96,7 +97,7 @@ header.bar-active .top {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #3C1152;
+    height: 80px;
 }
 
 header.bar-active .top .logo {
@@ -104,17 +105,16 @@ header.bar-active .top .logo {
     margin-bottom: 32px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%)
 }
-
 
 
 header.bar-active .top .gnb {
     position: absolute;
-    left:50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    outline: 1px solid red;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 header.bar-active .top .gnb ul li {
@@ -128,14 +128,18 @@ header.bar-active .gnb ul li a:hover {
 }
 
 header.bar-active .top .login {
-    display: inline-block;
+    position: absolute;
+    right:0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
-/* 메인 css */
+/* 투명 css */
 header.transparent {
     background-color: transparent;
 }
+
 header.transparent .gnb ul li a {
     color: #fff;
 }
@@ -143,19 +147,20 @@ header.transparent .gnb ul li a {
 header.transparent .login .btn {
     color: #fff;
     background-color: transparent;
-    background-image : none;
+    background-image: none;
     border: 1px solid #fff;
     box-sizing: border-box;
     padding: 6px 12px;
     border-radius: 30px;
     font-size: 14px;
 }
+
 header.transparent .login .btn:hover {
     color: #fff;
-    background-image : none;
+    background-image: none;
     padding: 6px 12px;
     border-radius: 30px;
     font-size: 14px;
-    font-weight:800;
+    font-weight: 800;
     box-sizing: border-box;
 }
