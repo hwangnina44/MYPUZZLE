@@ -3,6 +3,7 @@
 body {
     width: 100%;
     margin-top: 130px;
+    overflow-x: hidden;
 }
 
 article.content-header {
@@ -12,56 +13,58 @@ article.content-header {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto 320px;
-    /* background-position: center; */
     text-align: center;
     position: relative;
 }
 
 .content-header .lnb {
+
+}
+
+.content-header h2 {
+    font-family: "Montserrat", sans-serif;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.content-header .lnb h2 {
+    transform: translate(-50%,-50%);
     font-size: 40px;
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
 }
 .content-header h2 span {
-    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     color: #8121DD;
 }
-
-.content-header .lnb nav {
-    transform: translateY(-100%);
+.content-header .lnb {
+    position: absolute;
+    left: 50%;
+    bottom: -63px;
+    transform: translateX(-50%);
 }
 
-.content-header .lnb nav p {
+.content-header .lnb p {
     display: inline-block;
     padding: 4px 16px;
     font-size: 16px;
     border: 1px solid #878783;
     border-radius: 30px;
     color: #878784;
+    cursor: pointer;
 }
 
-.lnb nav p.on {
+nav.lnb p~p {
+    margin-left: 8px;
+}
+
+.lnb p.on {
     background-color: #5B1A7C;
     border: 1px solid #5B1A7C;
     color: #fff;
 }
 
-.lnb nav p:hover {
+.lnb p:hover {
     color: #5B1A7C;
     background-color: #FBFAFF;
     border: 1px solid #5B1A7C;
-}
-
-.lnb nav p~p {
-    margin-left: 24px;
 }
 
 section {}
@@ -70,7 +73,7 @@ section .section-top {
     font-size: 16px;
     color: #878484;
     font-weight: 500;
-    padding: 40px 0;
+    padding: 120px 0 40px;
 }
 
 section .section-top .filter {
@@ -94,11 +97,12 @@ section .section-top .filter p span:last-child {
 article.list {
     margin-bottom: 80px;
 }
+.list ul {
 
+}
 .list ul li {
-    width: 23.5%;
-    margin-right: 2%;
-    margin-bottom: 3%;
+    width: 23%;
+    margin: 1%;
     padding: 16px;
     border: 1px solid #eee;
     box-sizing: border-box;
@@ -106,10 +110,6 @@ article.list {
     overflow: hidden;
 }
 
-
-.list ul li:nth-child(4n) {
-    margin-right: 0;
-}
 
 ul li a .imgbox {
     width: 100%;

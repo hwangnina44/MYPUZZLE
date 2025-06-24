@@ -1,6 +1,30 @@
 //pill.js
 $(function () {
-    
+    $('nav p.best').click(function () {
+        $('.list li').hide();
+        $('.list li.best').show();
+
+    });
+
+    $('nav p.women').click(function () {
+        $('.list li').hide();
+        $('.list li.women').show();
+    });
+    $('nav p.men').click(function () {
+        $('.list li').hide();
+        $('.list li.men').show();
+    });
+    $('nav p.parent').click(function () {
+        $('.list li').hide();
+        $('.list li.parent').show();
+    });
+
+    $('nav p.all').click(function () {
+        $('.list li').show();
+    });
+});
+$(function () {
+
     $('nav p').click(function () {
         $(this).addClass('on').siblings().removeClass('on');
     });
