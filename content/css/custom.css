@@ -16,45 +16,29 @@ article.banner {
     background-size: cover;
     background-position: center;
     margin-bottom: 120px;
+    position: relative
 }
 
 .banner .title {
     text-align: center;
     color: #fff;
-    transform: translateY(100%);
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+    
 }
 
 .banner .title h2 {
     font-size: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
+    font-weight: 700;
 }
 
 .banner .title p {
-    font-size: 24px;
-
-    margin-bottom: 50px;
-}
-
-.banner .title .btn a {
-    display: inline-block;
-    padding: 14px 40px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 100px;
-    text-align: center;
-}
-
-.banner .title .btn a:hover {
-    display: inline-block;
-    padding: 14px 40px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #fff;
-    border-radius: 100px;
-    background-color: transparent;
-    text-align: center;
+    font-size: 18px;
 }
 
 article.custom {
@@ -76,7 +60,6 @@ article.custom {
     top: -82px;
     font-size: 200px;
     font-weight: 900;
-    font-family: "Montserrat", sans-serif;
 }
 
 .custom .title h2 {
@@ -113,7 +96,7 @@ article.custom {
 }
 
 .step .stepbox .step-des h2 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 24px;
@@ -131,18 +114,17 @@ article.custom {
     font-weight: 700;
     color: rgba(247, 247, 247, 0.8);
     position: absolute;
-    right: 20%;
+    right: 18%;
     bottom: 47px;
-    font-family: "Montserrat", sans-serif;
+   
 }
 .stepbox2 .step-des .step-num {
     font-size: 160px;
     font-weight: 700;
     color: rgba(247, 247, 247, 0.8);
     position: absolute;
-    left: 15%;
+    left: 14%;
     bottom: 47px;
-    font-family: "Montserrat", sans-serif;
 }
 
 .stepbox .img-box {
@@ -177,6 +159,32 @@ article.custom {
     height: 100%;
     display: block;
 }
+section .btn {
+    margin-top: 160px;
+    text-align: center;
+}
+
+section .btn a {
+    display: inline-block;
+    padding: 14px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3C1152;
+    border: 1px solid #3C1152;
+    border-radius: 100px;
+    text-align: center;
+}
+
+section .btn a:hover {
+    display: inline-block;
+    padding: 14px 40px;
+    font-weight: 700;
+    color: #3C1152;
+    border-radius: 100px;
+    background-color: transparent;
+    text-align: center;
+}
+
 .btn-more {
     border-radius: 100px;
     position: fixed;
@@ -187,7 +195,6 @@ article.custom {
 
 .btn-more a {
     display: block;
-    font-family: "Montserrat", sans-serif;
     padding-top: 50px;
 
 
@@ -221,112 +228,3 @@ article.custom {
     }
 }
 
-
-
-
-
-
-
-
-
-/* .step .stepwrap .step-des,
-.step .stepwrap .imgbox {
-    float: left;
-    width: 48%;
-}
-.step .stepwrap .step-des {
-    line-height: 24px;
-    margin-right: 2%;
-}
-
-.stepwrap .step-des .title {}
-
-.step-des .title {}
-
-.step-des .title h2 {
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 40px;
-}
-
-.step-des .title p {
-    font-size: 18px;
-    margin-bottom: 40px;
-    line-height: 30px;
-    height: 120px;
-}
-
-.step-des .btn {
-    font-weight: 400;
-    color: #595959;
-    font-size: 14px;
-    padding:  0 40px 0 0 ;
-    background-image: url(../../img/icon/more_b.jpg);
-    background-repeat: no-repeat;
-    background-position: center right;
-    cursor: pointer; 
-}
-
-
-.step-des .boxwrap .box {
-    float: left;
-    width: 48%;
-    margin-bottom: 40px;
-}
-.step-des .boxwrap .box:first-child {
-    margin-right: 2%;
-}
-.boxwrap .box img{
-    display: block;
-    width: 80px;
-    margin-bottom: 24px;
-}
-.boxwrap .box h3{
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 24px;
-}
-.boxwrap .box p{
-    font-size: 16px;
-    height: 92px;
-    color: #797979;
-}
-
-.step .stepwrap .imgbox{
-    height: 560px;
-    overflow: hidden;
-    background-color: #eee;
-    
-}
-
-.stepwrap .imgbox img {
-    display: block;
-    width: 100%;
-}
-.stepwrap .imgbox1 {
-    position: relative;
-    left:-300px;
-    opacity: 0;
-    transition: all 3s;
-}
-.stepwrap .imgbox2 {
-    position: relative;
-    left:-300px;
-    opacity: 0;
-    transition: all 3s;
-}
-.stepwrap .imgbox3 {
-    position: relative;
-    left:300px;
-    opacity: 0;
-    transition: all 3s;
-}
-.step2 .stepwrap .step-des2,
-.step2 .stepwrap .imgbox2 {
-    float: right;
-    width: 48%;
-    margin: 0 2% 0 0;
-}
-.step1 .stepwrap .imgbox2:first-child{
-    margin: 0;
-} */

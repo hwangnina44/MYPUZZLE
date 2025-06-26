@@ -43,7 +43,7 @@ article.slide {
     height: 100%;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .banner .box0 {
@@ -70,29 +70,29 @@ article.slide {
 }
 
 .slide .title h2 {
-    font-size: 40px;
+    font-size: 48px;
     color: #fff;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
 
 .slide .title p {
     font-size: 18px;
     color: #fff;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 28px;
-    margin-bottom: 32px;
+    margin-bottom:40px;
 }
 
 .slide .title .btn {
     display: inline-block;
-    font-size: 14px;
+    font-weight: 700;
     padding: 8px 24px;
-    color: #fff;
+    color:#fff;
     border: 1px solid #fff;
     border-radius: 40px;
     margin: 0 auto;
-    background-color: transparent;
+    font-weight: 700;
 }
 
 article.slide .pager {
@@ -130,7 +130,7 @@ article.custom {
 .custom .title h2 {
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 
 }
 
@@ -140,10 +140,9 @@ article.custom {
 }
 
 .custom .title p {
-    font-size: 16px;
+    font-size: 18px;
     color: #595959;
-    margin-bottom:24px;
-    line-height: 28px;
+    margin-bottom:40px;
 }
 
 .custom .title .btn {
@@ -213,19 +212,20 @@ article.custom {
 .content .des-box {
     position: absolute;
     left: 24px;
-    bottom: 0;
+    bottom: 10px;
     z-index: 11;
     margin-bottom: 24px;
 }
 
 .content .des-box h3 {
-    font-size: 24px;
+    font-size: 28px;
     color: #fff;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
     font-weight: 600;
 }
 
 .content .des-box p {
+    font-size: 18px;
     color: #fff;
 }
 
@@ -276,7 +276,10 @@ article.season::after {
 .customsub .title h2 {
     font-weight: 600;
     font-size: 40px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+}
+.customsub .title p {
+    font-size: 18px;
 }
 
 .customsub h2 span {
@@ -431,7 +434,6 @@ article.review .title h2 {
 
 .review .box a .rev-bottom p:last-child {
     color: #595959;
-    line-height: 28px;
     height: 100px;
     overflow: hidden;
 }
@@ -452,7 +454,7 @@ article.pill .title {
 article.pill .title h2 {
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .pill .title h2 span {
@@ -461,9 +463,10 @@ article.pill .title h2 {
 }
 
 .pill .title p {
+    font-size: 18px;
     color: #595959;
     line-height: 28px;
-    margin-bottom: 24px;
+    margin-bottom:40px;
 }
 
 .pill .title .btn {

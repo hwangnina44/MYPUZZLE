@@ -41,7 +41,17 @@ $(document).ready(function () {
         backgroundColor: '#fff'
     });
 
-    var timer = setInterval(slide, 2000);
+    var timer = setInterval(slide, 3000);
+
+    
+    $('.slide .banner').mouseenter(function () {
+        //자동실행 멈춤, 인터벌 제거 
+        clearInterval(timer);
+
+    }).mouseleave(function () {
+        //자동실행 다시 시작!, 인터벌 재가동!
+        timer = setInterval(slide, 3000);
+    });
 
     function slide() {
         if (page < total - 1) {

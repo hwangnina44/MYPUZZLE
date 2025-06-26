@@ -73,13 +73,13 @@ section#mypuzzle {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 40%;
+    top: 30%;
     z-index: 1;
     background-color: transparent;
 }
 
 #mypuzzle .title h2 {
-    font-size: 56px;
+    font-size: 48px;
     color: #fff;
     font-weight: 600;
     margin-bottom: 60px;
@@ -87,7 +87,7 @@ section#mypuzzle {
 }
 
 #mypuzzle .title p {
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
     display: none;
 }
