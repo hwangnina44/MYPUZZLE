@@ -28,12 +28,8 @@ nav ul.side-pager li {
     position: relative;
     float: none;
     cursor: pointer;
-    font-family: "Montserrat", sans-serif;
 }
 
-nav ul.side-pager li a {
-    font-family: "Montserrat", sans-serif;
-}
 
 nav ul.side-pager li::after {
     content: "";
