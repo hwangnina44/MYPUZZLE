@@ -43,7 +43,7 @@ $(document).ready(function () {
 
     var timer = setInterval(slide, 3000);
 
-    
+
     $('.slide .banner').mouseenter(function () {
         //자동실행 멈춤, 인터벌 제거 
         clearInterval(timer);
@@ -91,7 +91,7 @@ $(document).ready(function () {
         timer = setInterval(slide, 3000);
     });
 
-    
+
 
     /////////////custom/////////////////////////////////////////////////
 
@@ -108,11 +108,15 @@ $(document).ready(function () {
 
         if (scroll > customImg - 800) {
             $('.custom .con1').fadeTo(1000, 1, function () {
-                $(this).next().fadeTo(1000, 1,function(){
-                    $(this).next().fadeTo(1000,1);
+                $(this).next().fadeTo(1000, 1, function () {
+                    $(this).next().fadeTo(1000, 1);
                 });
             });
         }
+
+
+
+
     });
 
 
@@ -174,17 +178,13 @@ $(document).ready(function () {
         moveNum++; //left 이동값을 1씩 증가
 
         var boxWidth = $('.box-wrap .box').outerWidth(true);
-        console.log(boxWidth + '박스너비');
-
         //if else 문
         if (moveNum > boxWidth) {
 
             $('.box-wrap').append($('.box-wrap .box').first()).css({
                 left: 0,
             });
-
             moveNum = 0;
-
         } else {
             //moveNum의 값을 left 값으로 적용!
             $('.box-wrap').css({
@@ -194,4 +194,32 @@ $(document).ready(function () {
 
     }
 
+
+});
+
+$(function () {
+    var count = 0;
+    var target = 13950;
+    var duration = 1000;
+    var step = Math.ceil(target / (duration / 10));
+    var isCounted = false; // 숫자 중복 카운트 방지용
+
+    var review = $('article.review').offset().top;
+
+    $(window).on('scroll', function () {
+        var scroll = $(window).scrollTop(); // ← 이 위치로 이동해야 매번 갱신됨
+
+        if (!isCounted && scroll > review - 800) {
+            isCounted = true; // 한 번만 실행되게
+
+            var interval = setInterval(function () {
+                count += step;
+                if (count >= target) {
+                    count = target;
+                    clearInterval(interval);
+                }
+                $(".number").eq(0).text(count.toLocaleString());
+            }, 10);
+        }
+    });
 });
