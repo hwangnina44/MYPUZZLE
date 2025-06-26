@@ -21,7 +21,6 @@ article.content-header {
 }
 
 .content-header .lnb h2 {
-    font-family: "Montserrat", sans-serif;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -32,7 +31,6 @@ article.content-header {
     
 }
 .content-header h2 span {
-    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     color:#8121DD;
 }
@@ -97,15 +95,13 @@ article.list {
 
 .list ul li {
     float: left;
-    width: 32%;
+    width: 31%;
+    margin: 1%;
     box-sizing: border-box;
-    margin-right: 2%;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     position: relative;
 }
-ul li:nth-child(3n) {
-    margin-right: 0;
-}
+
 
 ul li a p.badge-issue {
     position: absolute;
