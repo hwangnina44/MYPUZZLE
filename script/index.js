@@ -21,8 +21,9 @@ function setDefaultGNB() {
     $('.login .icon-cart img').attr('src', 'img/icon/icon_cart.png');
 }
 
-$(document).ready(function () {
-    setTransparentGNB();
+$(document).ready(function(){
+    //////////////////////////////GNB///////////////////////////
+        setTransparentGNB();
     $(window).scroll(function () {
         if ($(window).scrollTop() > 250) {
             setDefaultGNB();
@@ -30,48 +31,72 @@ $(document).ready(function () {
             setTransparentGNB();
         }
     });
+});
 
-    //////////////////////////// 배너 슬라이드/////////////////////////////////////////
-    var slidW = $('.banner-box').width();
+
+
+//////////////banner-section////////////////////////////////
+$(document).ready(function () {
+    setTransparentGNB();
+
+    var slideW = $('.banner-box').width();
     var page = 0;
     var total = $('.banner-box').length;
     console.log(total);
 
+    //초기설정
     $('.pager a').eq(page).css({
         backgroundColor: '#fff'
     });
 
-    var timer = setInterval(slide, 3000);
+    //첫번째 슬라이드의 글자 등장!
+    $('.banner-box').first().find('.inbox').fadeIn(600);
 
-
-    $('.slide .banner').mouseenter(function () {
-        //자동실행 멈춤, 인터벌 제거 
-        clearInterval(timer);
-
-    }).mouseleave(function () {
-        //자동실행 다시 시작!, 인터벌 재가동!
-        timer = setInterval(slide, 3000);
-    });
+    var timer = setInterval(slide, 4000);
 
     function slide() {
-        if (page < total - 1) {
-            page++
-            $('.banner').animate({
-                marginLeft: -(page * slidW)
-            }, 800);
-        } else if (page == total - 1) {
-            $('.banner').css({
+
+        //한 번의 이동, 한 번의 준비
+        $('.banner').animate({
+            marginLeft: -slideW
+        }, 800, function () {
+            //글자등장!
+            showTxt();
+
+            //콜백함수 - 이동이 끝난 후, 다음을 위한 준비
+            $('.banner').append($('.banner-box').first()).css({
                 marginLeft: 0
             });
-            page = 0;
-        }
 
-        $('.pager a').eq(page).css({
+        });
+
+        //현재 보여지는 .banner-box의 data-seq 값 받아오기!
+        //이 값을 pager의 인덱스로 사용!
+        //eq(1)은 다음에 보여지는 슬라이드는 항상 두번째 슬라이드이므로!!!
+        var seq = $('.banner-box').eq(1).attr('data-seq');
+        console.log(seq);
+
+        pager(seq);
+
+    }
+
+    //슬라이드 - 글자등장 함수 
+    function showTxt() {
+        //초기화
+        $('.inbox').hide();
+        $('.banner-box').eq(1).find('.inbox').fadeIn(600);
+    }
+
+    //슬라이드 - 메뉴변경 함수 
+    function pager(num) {
+        $('.pager a').eq(num).css({
             backgroundColor: '#fff'
         }).siblings().css({
             backgroundColor: 'transparent'
         });
     }
+
+
 
     $('.slide .pager > a').click(function (e) {
         clearInterval(timer);
@@ -113,10 +138,6 @@ $(document).ready(function () {
                 });
             });
         }
-
-
-
-
     });
 
 
@@ -155,12 +176,40 @@ $(document).ready(function () {
 
 
 
+/////////////custom-section////////////////////////////////
+$(document).ready(function () {
+    $('.custom .content').css({
+        opacity: 0
+    });
+
+    $(window).on('scroll', function () {
+        var customImg = $('.custom .content-wrap').offset().top;
+        var scroll = $(window).scrollTop();
+        console.log(customImg, scroll);
+
+
+        if (scroll > customImg - 800) {
+            $('.custom .con1').fadeTo(1000, 1, function () {
+                $(this).next().fadeTo(1000, 1, function () {
+                    $(this).next().fadeTo(1000, 1);
+                });
+            });
+        }
+
+    });
+
+
+});
+
+
+
+///////////////////review-section/////////////////////////////////
 $(document).ready(function () {
     var autocall;
     var moveNum = 0;
 
     autocall = setInterval(flow, 20);
-    ////////////////////호버///////////////////////////////////
+    //>>호버
     $(".box-wrap .box").hover(
         function () {
             clearInterval(autocall);
@@ -172,7 +221,7 @@ $(document).ready(function () {
     );
 
 
-    ////////////////////리뷰///////////////////////////////////
+    //>>리뷰 슬라이드
     function flow() {
 
         moveNum++; //left 이동값을 1씩 증가
@@ -194,10 +243,14 @@ $(document).ready(function () {
 
     }
 
-
 });
 
+
+
+
+///////////////////////review -section/////////////////////////////
 $(function () {
+    //>>숫자 카운트 
     var count = 0;
     var target = 13950;
     var duration = 1000;
@@ -207,7 +260,7 @@ $(function () {
     var review = $('article.review').offset().top;
 
     $(window).on('scroll', function () {
-        var scroll = $(window).scrollTop(); // ← 이 위치로 이동해야 매번 갱신됨
+        var scroll = $(window).scrollTop();
 
         if (!isCounted && scroll > review - 800) {
             isCounted = true; // 한 번만 실행되게
@@ -222,4 +275,33 @@ $(function () {
             }, 10);
         }
     });
+});
+
+
+
+///////////////product///////////////////////////////////////////////
+$(function(){
+ /////>>영양제에 호버했을때
+    $('.pill .product').hover(
+        function () {
+
+            $(this).find('.des').show().css({
+                backgroundColor: 'rgba(0,0,0, 0.3)'
+            });
+            $(this).find('.info').hide();
+            $(this).find('.pill-img').css({
+                width: '100%',
+                float: 'none'
+            });
+        },
+        function () {
+            console.log("off")
+            $(this).find('.des').hide();
+            $(this).find('.info').show();
+            $(this).find('.pill-img').css({
+                width: '50%',
+                float: 'left'
+            });
+        }
+    );
 });
