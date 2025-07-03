@@ -21,9 +21,9 @@ function setDefaultGNB() {
     $('.login .icon-cart img').attr('src', 'img/icon/icon_cart.png');
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
     //////////////////////////////GNB///////////////////////////
-        setTransparentGNB();
+    setTransparentGNB();
     $(window).scroll(function () {
         if ($(window).scrollTop() > 250) {
             setDefaultGNB();
@@ -101,12 +101,14 @@ $(document).ready(function () {
     $('.slide .pager > a').click(function (e) {
         clearInterval(timer);
         e.preventDefault();
+        $('.inbox').hide();
 
         var index = $(this).index(); // 클릭한 a 요소의 인덱스
         page = index; // 전역 변수 page 업데이트
         $('.banner').animate({
             marginLeft: -(page * slideW)
         }, 800, function () {
+            $(this).find('.inbox').fadeIn(600);
             $('.pager a').eq(page).css({
                 backgroundColor: '#fff'
             }).siblings().css({
@@ -280,8 +282,8 @@ $(function () {
 
 
 ///////////////product///////////////////////////////////////////////
-$(function(){
- /////>>영양제에 호버했을때
+$(function () {
+    /////>>영양제에 호버했을때
     $('.pill .product').hover(
         function () {
 
