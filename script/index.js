@@ -105,7 +105,7 @@ $(document).ready(function () {
         var index = $(this).index(); // 클릭한 a 요소의 인덱스
         page = index; // 전역 변수 page 업데이트
         $('.banner').animate({
-            marginLeft: -(page * slidW)
+            marginLeft: -(page * slideW)
         }, 800, function () {
             $('.pager a').eq(page).css({
                 backgroundColor: '#fff'
