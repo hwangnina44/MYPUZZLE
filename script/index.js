@@ -27,7 +27,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() > 250) {
             setDefaultGNB();
-        } else {
+        } else if (($(window).scrollTop() ===0)) {
             setTransparentGNB();
         }
     });

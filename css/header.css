@@ -21,13 +21,13 @@ header .top {
 }
 
 header .top .logo {
-    height: 32px;
+    height: 28px;
     margin-bottom: 32px;
 }
 
 header .top .logo a {
     display: block;
-    height: 32px;
+    height: 28px;
 }
 
 
@@ -103,6 +103,7 @@ header.bar-active .top {
 header.bar-active .top .logo {
     height: 32px;
     margin-bottom: 32px;
+    margin-left: 20px;
     position: absolute;
     left: 0;
     top: 50%;
@@ -115,12 +116,13 @@ header.bar-active .top .gnb {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 header.bar-active .top .gnb ul li {
     float: none;
     display: inline-block;
-    padding: 0 12px;
+    padding: 0 40px;
 }
 
 header.bar-active .gnb ul li a:hover {
@@ -129,7 +131,7 @@ header.bar-active .gnb ul li a:hover {
 
 header.bar-active .top .login {
     position: absolute;
-    right:0;
+    right:1%;
     top: 50%;
     transform: translateY(-50%);
 }
