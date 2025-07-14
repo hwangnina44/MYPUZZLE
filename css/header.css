@@ -47,9 +47,8 @@ header .top .gnb ul li {
 
 header .top .login {
     position: absolute;
-    right: 0;
-    top: 0px;
-
+    right: 1%;
+    top: 0;
 }
 
 header .top .login .icon-btn {
@@ -163,6 +162,6 @@ header.transparent .login .btn:hover {
     padding: 6px 12px;
     border-radius: 30px;
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 900;
     box-sizing: border-box;
 }
