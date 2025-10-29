@@ -64,14 +64,13 @@ header .top .login .icon-btn img {
 }
 
 header .top .login .btn {
-    line-height: 28px;
     display: inline-block;
     color: #782D9E;
     border: 1px solid #782D9E;
     /*  background-image: linear-gradient(to bottom right, #9550b8, #782c9e, #5B1A7C); */
-    padding: 6px 12px;
+    padding: 8px 20px;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 18px;
     margin-left: 8px;
 }
 
@@ -151,9 +150,9 @@ header.transparent .login .btn {
     background-image: none;
     border: 1px solid #fff;
     box-sizing: border-box;
-    padding: 6px 12px;
+    padding: 8px 20px;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 header.transparent .login .btn:hover {

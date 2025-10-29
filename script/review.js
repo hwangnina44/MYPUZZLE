@@ -35,7 +35,7 @@ $(function () {
 
 $(document).ready(function () {
     // 초기 설정: 처음 4개만 보이기
-    $('.reviewwrap li').hide().slice(0, 3).show();
+    $('.reviewwrap li').hide().slice(0, 9).show();
     let isLoading = false;
 
     $(window).on('scroll', function () {
@@ -48,7 +48,7 @@ $(document).ready(function () {
             const hiddenItems = $('.reviewwrap li:hidden');
 
             if (hiddenItems.length > 0) {
-                hiddenItems.slice(0, 3).slideDown(800, function () {
+                hiddenItems.slice(0, 3).slideDown( function () {
                     isLoading = false;
                 });
                 

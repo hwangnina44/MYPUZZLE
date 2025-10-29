@@ -47,7 +47,7 @@ $(function(){
 
 $(document).ready(function () {
     // 초기 설정: 처음 4개만 보이기
-    $('.list li').hide().slice(0, 3).show();
+    $('.list li').hide().slice(0, 9).show();
     let isLoading = false;
 
     $(window).on('scroll', function () {

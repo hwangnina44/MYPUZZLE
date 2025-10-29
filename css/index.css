@@ -23,18 +23,16 @@ article.slide {
 
 .slide .banner {
     width: 300%;
-    
 }
 
 .banner .banner-box {
     /* height: 850px; */
-    
     width: 33.33%;
     float: left;
-    position: relative; /* .inbox의 기준!!! */
-
+    position: relative;
 }
-.banner .banner-box::before{
+
+.banner .banner-box::before {
     content: "";
     display: block;
     width: 100%;
@@ -44,12 +42,12 @@ article.slide {
     left: 0;
     top: 0;
 }
+
 .banner .banner-box a {
     display: block;
 }
 
 .banner .banner-box a img {
-
     width: 100%;
     display: block;
 }
@@ -57,36 +55,34 @@ article.slide {
 .banner .banner-box a .inbox {
     width: 1280px;
     margin: 0 auto;
-    /* position: relative; */
-
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 
-    display: none; /* 글자등장 구현을 위한 초기설정 */
+    display: none;
+    /* 글자등장 구현을 위한 초기설정 */
 }
-
 
 .slide .title h2 {
     font-size: 48px;
     color: #fff;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
 }
 
 .slide .title p {
-    font-size: 20x;
-    color: #fff; 
-    font-weight: 400;
-    line-height: 28px;
-    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 60px;
 }
 
 .slide .title .btn {
     display: inline-block;
-    font-size: 14px;
-    padding: 8px 24px;
+    font-size: 18px;
+    padding: 12px 24px;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 40px;
@@ -143,7 +139,7 @@ article.custom {
 .custom .title p {
     font-size: 18px;
     color: #595959;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
 .custom .title .btn {
@@ -173,7 +169,7 @@ article.custom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap:50px
+    gap: 50px
 }
 
 .content-wrap .content {
@@ -279,6 +275,7 @@ article.season::after {
     font-size: 40px;
     margin-bottom: 16px;
 }
+
 .customsub .title p {
     font-size: 18px;
 }
@@ -358,7 +355,6 @@ article.review .title h2 {
     cursor: pointer;
 }
 
-
 .review .slider {
     width: 100%;
     height: 300px;
@@ -378,7 +374,7 @@ article.review .title h2 {
     width: 250px;
     height: 250px;
     padding: 24px;
-    margin:10px;
+    margin: 10px;
     /* box-shadow: 0 0 8px #5B1A7C; */
     border-radius: 30px 30px 30px 0;
     border: 1px solid #eee;
@@ -393,6 +389,7 @@ article.review .title h2 {
     border: 2px solid #26A6CC;
     box-sizing: border-box;
 }
+
 .box-wrap .box:hover .rev-bottom {
     transform: scale(1.1);
     overflow: hidden;
@@ -467,7 +464,7 @@ article.pill .title h2 {
     font-size: 18px;
     color: #595959;
     line-height: 28px;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
 .pill .title .btn {
@@ -652,7 +649,7 @@ article.magazine .title h2 {
 }
 
 .magazine-box a:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .title-box h3 {
