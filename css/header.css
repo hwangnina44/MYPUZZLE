@@ -10,7 +10,7 @@ header {
     z-index: 9999;
     background-color: rgba(255, 255, 255, 0.8);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 header .top {
@@ -21,7 +21,6 @@ header .top {
 }
 
 header .top .logo {
-    height: 28px;
     margin-bottom: 32px;
 }
 
@@ -54,7 +53,7 @@ header .top .login {
 header .top .login .icon-btn {
     display: inline-block;
     padding: 0 8px;
-    height: 28px;
+    height: 24px;
     vertical-align: middle;
 }
 
@@ -68,9 +67,9 @@ header .top .login .btn {
     color: #782D9E;
     border: 1px solid #782D9E;
     /*  background-image: linear-gradient(to bottom right, #9550b8, #782c9e, #5B1A7C); */
-    padding: 8px 20px;
+    padding: 6px 20px;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 14px;
     margin-left: 8px;
 }
 
@@ -88,7 +87,7 @@ header.bar-active {
     top: 0;
     z-index: 9999;
     background-color: rgba(255, 255, 255, 0.8);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 header.bar-active .top {
@@ -101,9 +100,8 @@ header.bar-active .top {
 header.bar-active .top .logo {
     height: 32px;
     margin-bottom: 32px;
-    margin-left: 20px;
     position: absolute;
-    left: 0;
+    left: 22%;
     top: 50%;
     transform: translateY(-50%)
 }
@@ -120,7 +118,7 @@ header.bar-active .top .gnb {
 header.bar-active .top .gnb ul li {
     float: none;
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 24px;
 }
 
 header.bar-active .gnb ul li a:hover {
@@ -129,7 +127,7 @@ header.bar-active .gnb ul li a:hover {
 
 header.bar-active .top .login {
     position: absolute;
-    right:1%;
+    right:20%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -152,15 +150,14 @@ header.transparent .login .btn {
     box-sizing: border-box;
     padding: 8px 20px;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 header.transparent .login .btn:hover {
     color: #fff;
     background-image: none;
-    padding: 6px 12px;
+    padding: 8px 20px;
     border-radius: 30px;
     font-size: 14px;
-    font-weight: 900;
     box-sizing: border-box;
 }
