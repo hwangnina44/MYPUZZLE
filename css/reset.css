@@ -19,10 +19,6 @@ ol::after {
     clear: both;
 }
 
-li {
-    float: left;
-}
-
 a {
     text-decoration: none;
     color: #333

@@ -1,18 +1,5 @@
 @charset "utf-8";
 
-body {
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    width: 100%;
-}
-
-section {
-    width: 100%;
-    margin: 0 auto;
-}
-
-
 /* 배너 */
 article.slide {
     width: 100%;
@@ -72,22 +59,14 @@ article.slide {
 }
 
 .slide .title p {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.6;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
-
-.slide .title .btn {
-    display: inline-block;
-    font-size: 18px;
-    padding: 12px 24px;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 40px;
-    margin: 0 auto;
-    background-color: transparent;
+.slide .title .banner_btn {
+    font-weight: 700;
 }
 
 article.slide .pager {
