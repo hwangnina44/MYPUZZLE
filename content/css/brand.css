@@ -89,7 +89,6 @@ section#mypuzzle {
 }
 
 /* section */
-
 section.page {
     width: 100%;
     height: 100%;
@@ -104,7 +103,7 @@ section.page {
 #consult::before,
 #quality::before {
     content: "";
-    width: 55%;
+    width: 51%;
     height: 2px;
     display: block;
     background-color: #fff;
@@ -115,9 +114,35 @@ section.page {
 }
 
 section .des-box {
+    width: 46%;
+    height: 100%;
     position: absolute;
-    right: 10%;
-    top: 20%;
+    right: 0%;
+    top: 0%;
+    color: #fff;
+}
+
+.des-box .subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    position: absolute;
+    top: 21%;
+}
+
+.des-box .des {
+    position: absolute;
+    bottom: 20%;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.page .des-box .des h3 {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
 #consult {
@@ -128,28 +153,6 @@ section .des-box {
 #quality {
     position: relative;
     background: url(../img/brand_list3.jpg) no-repeat center/cover;
-}
-
-.page .des-box .subtitle {
-    font-family: "Montserrat", sans-serif;
-    font-size: 80px;
-    letter-spacing: 2px;
-    color: #fff;
-    font-weight: 700;
-    margin-bottom: 60px;
-}
-
-.page .des-box .des {
-    font-size: 18px;
-    line-height: 28px;
-    color: #fff;
-
-}
-
-.page .des-box .des h3 {
-    font-weight: 700;
-    font-size: 32px;
-    margin-bottom: 20px;
 }
 
 /* 버튼 */
