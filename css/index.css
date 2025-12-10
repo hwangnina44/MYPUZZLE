@@ -59,14 +59,20 @@ article.slide {
 }
 
 .slide .title p {
-    font-size: 16px;
+    font-size: 24px;
     color: #fff;
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 40px;
 }
 .slide .title .banner_btn {
+    font-size: 16px;
+    display: inline-block;
     font-weight: 700;
+    padding: 14px 24px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 article.slide .pager {
